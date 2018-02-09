@@ -6,7 +6,9 @@
   "dependencies": {
     "axios": "^0.17.1",
     "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
     "express": "^4.16.2",
+    "mssql": "^4.1.0",
     "nodemon": "^1.14.12",
     "pug": "^2.0.0-rc.4"
   },

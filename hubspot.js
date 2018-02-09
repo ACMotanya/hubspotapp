@@ -86,6 +86,33 @@ data.forEach(function (batch) {
 });
 */
 
+var cntr = 0;
+var updated_json = [];
+var data = fs.readFileSync('webinfo.js', 'utf-8');
+data = JSON.parse(data);
+
+var query_data = fs.readFileSync('itemjson.js', 'utf-8');
+query_data = JSON.parse(query_data);
+data.forEach(function (batch) {
+  cntr++;  
+  query_data.forEach(function (item) {
+
+    if (batch.itemnum === item.Item) {
+      console.log("HI! I updated " + item.Item + " and also " + batch.itemnum + " " + cntr);
+      updated_json.push({"itemnum":item.Item,"location":"800","shortdesc":batch.shortdesc,"shortdesc2":batch.shortdesc2,"dimensions":batch.dimensions,"oldwholprice":item.Wholesale});
+      
+      if(cntr === 1286) {
+        updated_json = JSON.stringify(updated_json);
+        console.log(updated_json);
+        fs.writeFile('wholesaleprice.js', updated_json, 'utf8');
+      }
+      //console.log(cntr);
+    }
+    
+  });
+});
+
+
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
@@ -113,7 +140,8 @@ readWriteSync();
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
 
-// LOOP QUERY JSON OBJECT AND ADD IN THE SALES DATA FOR THE APPROPIATE YEA
+// LOOP QUERY JSON OBJECT AND ADD IN THE SALES DATA FOR THE APPROPIATE 
+/*
 var newJson = fs.readFileSync('netlink_logins.js', 'utf-8');
 newJson = JSON.parse(newJson);
 newJson.forEach (function (input, index) {
@@ -132,7 +160,7 @@ newJson.forEach (function (input, index) {
     });
   }, index * 3000);
 });
-
+*/
 
 
 

@@ -1,0 +1,84 @@
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////Gets back Data for a single Customer so you can upload it to HubSpot\\\\\\\\\\\\
+
+
+t.customernumber, sum(tprice)as TSales, sum(tcnt) as TOrders
+from (
+ 
+ 
+select  a.customernumber, sum(totalprice)as TPrice,Sum(totalcost) as TCost,Sum(totaldiscountamt) as TDisc, count(totalprice)as tcnt, b.emailaddress
+from SWCCSHST1 a
+left outer join swccrcust b on a.customernumber = b.customernumber
+where Year(invoicedate) = '2018' and (totalcost <> 0) and ((OrderType ='R') Or (OrderType = 'H')) and locationnumber = '800' and LTRIM(RTRIM(b.customernumber))  = '8000265'
+group by a.customernumber, b.emailaddress
+ 
+UNION ALL
+ 
+select c.customernumber, sum(totalprice)as TPrice,Sum(totalcost) as TCost,Sum(totaldiscount) as TDisc, count(totalprice)as tcnt, d.emailaddress
+from SWCCSBIL1 c
+left outer join swccrcust d on c.customernumber = d.customernumber
+where Year(orderdate) = '2016' and (totalcost <> 0) and ((OrderType ='R') Or (OrderType = 'H')) and locationnumber = '800' and LTRIM(RTRIM(d.customernumber))  = '8000265'
+group by c.customernumber, d.emailaddress
+ 
+) t
+group by t.customernumber, t.emailaddress
+order by t.customernumber
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+/////////////Get back all customer data for that year\\\\\\\\\\\\\\\\\\\
+
+
+customernumber, sum(tprice)as TSales, sum(tcnt) as TOrders
+from (
+ 
+ 
+select  customernumber, sum(totalprice)as TPrice,Sum(totalcost) as TCost,Sum(totaldiscountamt) as TDisc, count(totalprice)as tcnt from SWCCSHST1
+where Year(invoicedate) = '2018' and (totalcost <> 0) and ((OrderType ='R') Or (OrderType = 'H')) and locationnumber = '800'
+group by customernumber
+ 
+UNION ALL
+ 
+select customernumber, sum(totalprice)as TPrice,Sum(totalcost) as TCost,Sum(totaldiscount) as TDisc, count(totalprice)as tcnt from SWCCSBIL1
+where Year(orderdate) = '2016' and (totalcost <> 0) and ((OrderType ='R') Or (OrderType = 'H')) and locationnumber = '800'
+group by customernumber
+ 
+) t
+group by customernumber
+order by customernumber
+
+
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+//////////////////////////Updated HST Query\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+Select a.ordernumber, a.invoicedate, a.totalprice, a.customernumber, a.invoicenumber
+From dbo.SWCCSHST1 a
+Left Outer Join dbo.HubSpotPushOrders b on a.ordernumber = b.OrderNumber
+Where (b.OrderNumber is null) and (a.invoicedate = '12/01/2017') and (locationnumber = '800')
+order by a.ordernumber
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+/////////////////////////Adding in box query stuff\\\\\\\\\\\\\\\\\\\\\\
+
+Select a.ordernumber, a.invoicedate, a.totalprice, a.customernumber, a.invoicenumber,
+  stuff((select ',' + c.trackingnumber+ '/'+ c.shipmethod from SWCCSSBOX c where a.invoicenumber = c.invoicenumber and c.boxnumber = 1 FOR XML PATH('')) ,1,1,'') AS ShipInfo
+From dbo.SWCCSHST1 a
+Left Outer Join dbo.HubSpotPushOrders b on a.ordernumber = b.OrderNumber
+Where (b.OrderNumber is null) and (a.invoicedate > '12/01/2017') and (locationnumber = '800')
+order by a.ordernumber

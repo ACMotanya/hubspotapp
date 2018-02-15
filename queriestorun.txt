@@ -82,3 +82,115 @@ From dbo.SWCCSHST1 a
 Left Outer Join dbo.HubSpotPushOrders b on a.ordernumber = b.OrderNumber
 Where (b.OrderNumber is null) and (a.invoicedate > '12/01/2017') and (locationnumber = '800')
 order by a.ordernumber
+
+
+
+
+
+
+
+
+
+{
+    "results": [
+        {
+            "engagement": {
+                "id": 633433738,
+                "portalId": 4129355,
+                "active": true,
+                "createdAt": 1513703424923,
+                "lastUpdated": 1513711837657,
+                "createdBy": 5080943,
+                "modifiedBy": 5080943,
+                "ownerId": 30967530,
+                "type": "TASK",
+                "timestamp": 1519016400000,
+                "teamId": 66760
+            },
+            "associations": {
+                "contactIds": [],
+                "companyIds": [
+                    632369423
+                ],
+                "dealIds": [],
+                "ownerIds": [],
+                "workflowIds": [],
+                "ticketIds": []
+            },
+            "attachments": [],
+            "scheduledTasks": [
+                {
+                    "engagementId": 633433738,
+                    "portalId": 4129355,
+                    "engagementType": "TASK",
+                    "taskType": "REMINDER",
+                    "timestamp": 1519045200000,
+                    "uuid": "TASK:255b691e-892e-4201-9f40-88b143d05f16"
+                }
+            ],
+            "metadata": {
+                "body": "<p>Call and verify they received the flyer mailing. Review if there core customer would purchase those products and why/why not. Ask qualifying questions to offer additional programs that fit their core customer base and schedule another call to check in.</p>",
+                "status": "NOT_STARTED",
+                "subject": "Reason for call: PPP Flyer Mailing Follow-up",
+                "taskType": "CALL",
+                "reminders": [
+                    1519045200000
+                ],
+                "sendDefaultReminder": true
+            }
+        },
+        {
+            "engagement": {
+                "id": 633822652,
+                "portalId": 4129355,
+                "active": true,
+                "createdAt": 1513701895869,
+                "lastUpdated": 1513711918048,
+                "createdBy": 5080943,
+                "modifiedBy": 5080943,
+                "ownerId": 30967173,
+                "type": "TASK",
+                "timestamp": 1519016400000,
+                "teamId": 66760
+            },
+            "associations": {
+                "contactIds": [],
+                "companyIds": [
+                    632369434
+                ],
+                "dealIds": [],
+                "ownerIds": [],
+                "workflowIds": [],
+                "ticketIds": []
+            },
+            "attachments": [],
+            "scheduledTasks": [
+                {
+                    "engagementId": 633822652,
+                    "portalId": 4129355,
+                    "engagementType": "TASK",
+                    "taskType": "REMINDER",
+                    "timestamp": 1519045200000,
+                    "uuid": "TASK:43b8334a-5197-41a8-b2d8-7bff5d301125"
+                }
+            ],
+            "metadata": {
+                "body": "<p>Call and verify they received the flyer mailing. Review if there core customer would purchase those products and why/why not. Ask qualifying questions to offer additional programs that fit their core customer base and schedule another call to check in.</p>",
+                "status": "NOT_STARTED",
+                "subject": "Reason for call: PPP Flyer Mailing Follow-up",
+                "taskType": "CALL",
+                "reminders": [
+                    1519045200000
+                ],
+                "sendDefaultReminder": true
+            }
+        }
+    ],
+    "hasMore": true,
+    "offset": 644635147
+}
+
+
+S\K[]G>;NkGAMJD >> deepdive
+P^GCKO>O^GGAMJD >> Laura1234
+X_U`JFRN^FGAMJD >> Cousin1234

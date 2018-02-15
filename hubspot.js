@@ -23,8 +23,14 @@ server.listen(port, hostname, () => {
 // PULL BACK ALL CONTACTS WITH ACCOUNT NUMBER AND SAVE IN A VARIABLE  - DONEEE
 //WRITE TO FILE EVERY TIME WE RUN A HUBSPOT FUNCTION
 ////////////////////////////////////////////////////////////////////////
-var json = "";
-
+var json = [];
+var formatter = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
+  minimumFractionDigits: 2,
+  // the default value for minimumFractionDigits depends on the currency
+  // and is usually already 2
+});
 function helloWork(vid, cb) {
 	axios.get('https://api.hubapi.com/contacts/v1/lists/all/contacts/all?hapikey=09c5f18b-d855-4d83-a770-063d908f9466&property=account_number&count=100&vidOffset=' + vid + '')
 		.then(function (response) {
@@ -112,55 +118,43 @@ function customerUpdate () {
 ////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////
 //FORMATS DATA SO I CAN IMPORT INTO HUBSPOT FOR THE DAILY SALES DATA ONLY
+//NEEDS LOGGING INFORMATION IF CUSTOMER IS NOT IN THE HUBSPOT
 var cntr = 0;
 var updated_json = [];
 function formatSalesDataForUpload() {
   var data = fs.readFileSync('2018contact.js', 'utf-8');
   data = JSON.parse(data);
-
+  console.log(data.length);
   var query_data = fs.readFileSync('2018querydata.js', 'utf-8');
   query_data = JSON.parse(query_data);
 
   data.forEach(function (batch) {
+    cntr++;
     batch.forEach(function (contact) {
-      cntr++;
-      console.log(contact.properties.account_number.value);  
-      query_data.forEach(function (item) {
-        if (contact.properties.account_number.value === item.customernumber.toString()) {
-          console.log("HI! I updated " + item.customernumber + " and also " + contact.properties.account_number.value + " " + cntr);
-          updated_json.push({"vid": contact.vid.toString(), "properties": [ { "property": "laurajanelle_com_login", "value": item.username } ] });
-          
-          if(cntr === 2376) {
-            updated_json = JSON.stringify(updated_json);
-            console.log(updated_json);
-            fs.writeFile('hubspotLogins.js', updated_json, 'utf8');
+      if (contact.properties.account_number) {
+        query_data.forEach(function (item) {
+          item = JSON.parse(item);
+          if (contact.properties.account_number.value === item[0].customernumber.trim()) {
+            console.log("HI! I updated " + item[0].customernumber + " and also " + contact.properties.account_number.value + " " + cntr);
+            updated_json.push({"vid": contact.vid, "properties": [{"property": "n2018_number_of_orders", "value" : item[0].TOrders },{"property": "n2018_total_sales", "value": formatter.format(item[0].TSales)}] });
           }
-          console.log(cntr);
-        }
-      });
+        });
+      }
     });
+    console.log(cntr);
+    if(cntr === data.length) {
+      updated_json = JSON.stringify(updated_json);
+      console.log(updated_json);
+      fs.writeFile('contactOrderData.js', updated_json, 'utf8');
+    }
   });
 }
+//formatSalesDataForUpload();
 
 
-var formatter = new Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'USD',
-  minimumFractionDigits: 2,
-  // the default value for minimumFractionDigits depends on the currency
-  // and is usually already 2
-});
 
-var somthing;
-var customerdata = fs.readFileSync('2018querydata.js', 'utf-8');
-    customerdata = JSON.parse(customerdata);
-    console.log(customerdata);
-    customerdata.forEach (function (input, index) {
-      input = JSON.parse(input);
-      something = formatter.format(input[0].TSales);
-      console.log(something);
-    });
-  //  console.log(JSON.parse(customerdata[0]));
+
+
 
 
 var cntr = 0;
@@ -255,13 +249,7 @@ function formatLogin() {
 ////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////
 //FORMATS DATA SO I CAN IMPORT INTO HUBSPOT FOR THE YEARLY SALES DATA ONLY
-var formatter = new Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'USD',
-  minimumFractionDigits: 2,
-  // the default value for minimumFractionDigits depends on the currency
-  // and is usually already 2
-});
+
 var counter = 0;
 
 function formatSalesDataYear() {
@@ -294,9 +282,7 @@ function formatSalesDataYear() {
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
 
-// MODIFY THE QUERY JSON OBJECT TO BE FORMATTED FOR IMPORT INTO HUBSPOT
-// ONLY ALLOWEED TO BATCH 100 RECORDS AT A TIME TO HUBSPOT THIS FUNCTION 
-// DIVIDES THE ALL CONTACTS INTO ARRAYS OF 100 AT THE MOST.
+
 /*
 function readWriteSync() {
   var newJson = fs.readFileSync('hubspotLogins.js', 'utf-8');
@@ -320,23 +306,31 @@ readWriteSync();
 ////////////////////////////////////////////////////////////////////////
 
 // LOOP QUERY JSON OBJECT AND ADD IN THE SALES DATA FOR THE APPROPIATE 
-/*
-var newJson = fs.readFileSync('netlink_logins.js', 'utf-8');
-newJson = JSON.parse(newJson);
-newJson.forEach (function (input, index) {
-  console.log(input.length);
-  setTimeout(function () {
-    axios({
-      method: 'POST',
-      url: 'https://api.hubapi.com/contacts/v1/contact/batch/?hapikey=09c5f18b-d855-4d83-a770-063d908f9466',
-      data:  input
-    })
-    .then(function (response) {
-      console.log(response.status);
-    })
-    .catch(function (error) {
-      console.log(error.IncomingMessage);
-    });
-  }, index * 3000);
-});
-*/
+function hubspotUpload() {
+  var newJson = fs.readFileSync('contactOrderData.js', 'utf-8');
+  newJson = JSON.parse(newJson);
+  //console.log(newJson);
+  //newJson.forEach (function (input, index) {
+   //console.log(input.length);
+    
+  //  setTimeout(function () {
+      axios({
+        method: 'POST',
+        url: 'https://api.hubapi.com/contacts/v1/contact/batch/?hapikey=09c5f18b-d855-4d83-a770-063d908f9466',
+        data:  newJson
+      })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error.IncomingMessage);
+      });
+  //  }, index * 3000);
+    
+  //});
+}
+
+//hubspotUpload();
+
+
+//item = JSON.parse(item.replace(/"\s+|\s+"/g,'"'));

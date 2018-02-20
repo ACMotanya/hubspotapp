@@ -7,6 +7,7 @@ const cors = require('cors');
 const sql = require('mssql');
 const config = require('./config/DB');
 var Item;
+var json = [];
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false}));
@@ -43,7 +44,7 @@ app.listen(3000, () => {
 3) customerUpdate           --> Run query against SWDB and get aggregated order data for each customer that was pulled back in the exeQuery function SYNC
 4) formatSalesDataForUpload --> Create a file or variable to hold data that is formatted so it can be uploaded to HubSpot. - SYNC
 5) readWriteBatch           --> If hubspot upload is bigger than 100 records, you must run this function and batch the records in array of 100 elements. 
-6) hubspotUpload            --> Grabs the file or variable and uploads the chanegs to HubSpot!!
+6) hubspotUpload            --> Grabs the file or variable and uploads the changes to HubSpot!!
 */
 var formatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
@@ -53,27 +54,35 @@ var formatter = new Intl.NumberFormat('en-US', {
   // and is usually already 2
 });
 function helloWork(vid, cb) {
-	axios.get('https://api.hubapi.com/contacts/v1/lists/all/contacts/all?hapikey=09c5f18b-d855-4d83-a770-063d908f9466&property=account_number&count=100&vidOffset=' + vid + '')
+	axios.get('https://api.hubapi.com/contacts/v1/lists/all/contacts/all?hapikey=09c5f18b-d855-4d83-a770-063d908f9466&property=account_number&property=hubspot_owner_id&count=100&vidOffset=' + vid + '')
 		.then(function (response) {
-			console.log(response.data.contacts);
-
-      json = " ," + JSON.stringify(response.data.contacts);
-      
-      fs.appendFile("2018contact.js", json, function(err){
-        if(err) throw err;
-        console.log('IS WRITTEN');
+      contacts = response.data.contacts;
+      contacts.forEach( function (contact) {
+        if (contact.properties.account_number) {
+          console.log(contact.properties.lastmodifieddate.value);
+          if (contact.properties.hubspot_owner_id) {         
+            json.push({"vid": contact.vid, "account_number": contact.properties.account_number.value, "hubspot_owner_id": contact.properties.hubspot_owner_id.value });
+          } else {
+            json.push({"vid": contact.vid, "account_number": contact.properties.account_number.value, "hubspot_owner_id": "30951267" });
+          }
+        }
       });
+      
 			if (response.data['has-more']) {
-				helloWork(response.data['vid-offset']);
-			}
+        setTimeout(function () {
+          helloWork(response.data['vid-offset']);
+        }, 2000);
+      } else {
+        json = JSON.stringify(json);
+        fs.appendFile("2018contact.js", json, function(err){
+          if(err) throw err;
+          console.log('IS WRITTEN');
+        });
+      }
 		})
 		.catch(function (error) {
 			console.log(error);
 		});
-
-	//if (cb && typeof (cb) === "function") {
-	//	writeMeJesus();
-	//}
 }
 
 var customersToUpdate = [];
@@ -138,17 +147,15 @@ function formatSalesDataForUpload() {
 
   data.forEach(function (batch) {
     cntr++;
-    batch.forEach(function (contact) {
-      if (contact.properties.account_number) {
-        query_data.forEach(function (item) {
-          item = JSON.parse(item);
-          if (contact.properties.account_number.value === item[0].customernumber.trim()) {
-            console.log("HI! I updated " + item[0].customernumber + " and also " + contact.properties.account_number.value + " " + cntr);
-            updated_json.push({"vid": contact.vid, "properties": [{"property": "n2018_number_of_orders", "value" : item[0].TOrders },{"property": "n2018_total_sales", "value": formatter.format(item[0].TSales)}] });
-          }
-        });
+
+    query_data.forEach(function (item) {
+      item = JSON.parse(item);
+      if (batch.account_number === item[0].customernumber.trim()) {
+        console.log("HI! I updated " + item[0].customernumber + " and also " + batch.account_number + " " + cntr);
+        updated_json.push({"vid": batch.vid, "properties": [{"property": "n2018_number_of_orders", "value" : item[0].TOrders },{"property": "n2018_total_sales", "value": formatter.format(item[0].TSales)},{"property": "hubspot_owner_id", "value": batch.hubspot_owner_id}] });
       }
     });
+
     console.log(cntr);
     if(cntr === data.length) {
       updated_json = JSON.stringify(updated_json);

@@ -4,38 +4,38 @@
 	"totalprice": 255,
 	"customernumber": "8802354",
 	"invoicenumber": "8000187860",
-	"TrackingInfo": ["789793285336"],
-	"MethodInfo": ["FedEx"]
+	"TrackingInfo": "789793285336",
+	"MethodInfo": "FedEx"
 }, {
 	"ordernumber": "800018964",
 	"invoicedate": "2018-02-19T00:00:00.000Z",
 	"totalprice": 545,
 	"customernumber": "8802510",
 	"invoicenumber": "8000189640",
-	"TrackingInfo": ["789793453391"],
-	"MethodInfo": ["FedEx"]
+	"TrackingInfo": "789793453391",
+	"MethodInfo": "FedEx"
 }, {
 	"ordernumber": "800019091",
 	"invoicedate": "2018-02-19T00:00:00.000Z",
 	"totalprice": 156,
 	"customernumber": "8802553",
 	"invoicenumber": "8000190910",
-	"TrackingInfo": ["789786006750"],
-	"MethodInfo": ["FedEx"]
+	"TrackingInfo": "789786006750",
+	"MethodInfo": "FedEx"
 }, {
 	"ordernumber": "800019304",
 	"invoicedate": "2018-02-19T00:00:00.000Z",
 	"totalprice": 50,
 	"customernumber": "8801767",
 	"invoicenumber": "8000193041",
-	"TrackingInfo": ["789785756162"],
-	"MethodInfo": ["FedEx"]
+	"TrackingInfo": "789785756162",
+	"MethodInfo": "FedEx"
 }, {
 	"ordernumber": "800019388",
 	"invoicedate": "2018-02-19T00:00:00.000Z",
 	"totalprice": 0,
 	"customernumber": "8801938",
 	"invoicenumber": "8000193880",
-	"TrackingInfo": ["9400109898642149651352"],
-	"MethodInfo": ["USPS"]
+	"TrackingInfo": "9400109898642149651352",
+	"MethodInfo": "USPS"
 }]

@@ -77,7 +77,8 @@ order by a.ordernumber
 /////////////////////////Adding in box query stuff\\\\\\\\\\\\\\\\\\\\\\
 
 Select a.ordernumber, a.invoicedate, a.totalprice, a.customernumber, a.invoicenumber,
-  stuff((select ',' + c.trackingnumber+ '/'+ c.shipmethod from SWCCSSBOX c where a.invoicenumber = c.invoicenumber and c.boxnumber = 1 FOR XML PATH('')) ,1,1,'') AS ShipInfo
+  stuff((select ',' + c.trackingnumber+ '| ' from SWCCSSBOX c where a.invoicenumber = c.invoicenumber and c.boxnumber = 1 FOR XML PATH('')) ,1,1,'') AS TrackingInfo,
+  stuff((select ',' + c.shipmethod+ '| ' from SWCCSSBOX c where a.invoicenumber = c.invoicenumber and c.boxnumber = 1 FOR XML PATH('')) ,1,1,'') AS MethodInfo
 From dbo.SWCCSHST1 a
 Left Outer Join dbo.HubSpotPushOrders b on a.ordernumber = b.OrderNumber
 Where (b.OrderNumber is null) and (a.invoicedate > '12/01/2017') and (locationnumber = '800')

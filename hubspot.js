@@ -1,17 +1,18 @@
-const https = require('https');
-const axios = require('axios');
-const fs = require('fs');
-const cors = require('cors');
-const sql = require('mssql');
+const https  = require('https');
+const axios  = require('axios');
+const fs     = require('fs');
+const cors   = require('cors');
+const sql    = require('mssql');
 const config = require('./config/DB');
+const dotenv = require('dotenv').config();
 
-//const file = fs.createWriteStream('contact.js');
+const hapikey = process.env.HAPIKEY;
 const hostname = '127.0.0.1';
 const port = 3000;
 var item;
 const server = https.createServer((req, res) => {
 	res.statusCode = 200;
-//	res.setHeader('Content-Type', 'text/plain');
+  //res.setHeader('Content-Type', 'text/plain');
 	res.end('Hello World\n');
 });
 
@@ -32,7 +33,7 @@ var formatter = new Intl.NumberFormat('en-US', {
   // and is usually already 2
 });
 function helloWork(vid, cb) {
-	axios.get('https://api.hubapi.com/contacts/v1/lists/all/contacts/all?hapikey=09c5f18b-d855-4d83-a770-063d908f9466&property=account_number&property=hubspot_owner_id&count=100&vidOffset=' + vid + '')
+	axios.get('https://api.hubapi.com/contacts/v1/lists/all/contacts/all?hapikey='+ hapikey +'&property=account_number&property=hubspot_owner_id&count=100&vidOffset=' + vid + '')
 		.then(function (response) {
       //console.log(response.data.contacts);
       contacts = response.data.contacts;
@@ -53,7 +54,7 @@ function helloWork(vid, cb) {
         }, 2000);
       } else {
         json = JSON.stringify(json);
-        fs.appendFile("2018contact.js", json, function(err){
+        fs.appendFile("contact.js", json, function(err){
           if(err) throw err;
           console.log('IT IS WRITTEN');
         });
@@ -85,8 +86,11 @@ function exeQuery(date) {
       item = JSON.parse(item.replace(/"\s+|\s+"/g,'"'));
       console.log(item);
       Object.keys(item).forEach(function(k){
-        if (item[k].TrackingInfo)
+        if (item[k].TrackingInfo) {
           item[k].TrackingInfo = item[k].TrackingInfo.split("  ");
+        } else {
+          item[k].TrackingInfo = "None Provided.";
+        }
         if (item[k].MethodInfo)
           item[k].MethodInfo = item[k].MethodInfo.split("  ");
       });
@@ -323,7 +327,7 @@ function hubspotUpload() {
   //  setTimeout(function () {
       axios({
         method: 'POST',
-        url: 'https://api.hubapi.com/contacts/v1/contact/batch/?hapikey=09c5f18b-d855-4d83-a770-063d908f9466',
+        url: 'https://api.hubapi.com/contacts/v1/contact/batch/?hapikey='+ hapikey,
         data:  newJson
       })
       .then(function (response) {
@@ -346,6 +350,7 @@ function hubspotUpload() {
 ////////////////////////////////////////////////////////////////////////
 // BUILD TASK ENGAGEMENTS JSON FOR THE ORDERS INVOICED THAT DAY.
 counter = 0;
+
 function gageBuilder() {
   var gager = fs.readFileSync('2018contact.js', 'utf-8');
   gager = JSON.parse(gager);
@@ -354,58 +359,45 @@ function gageBuilder() {
 
   Object.keys(gager).forEach(function(k) {
     counter++;
-  
-    Object.keys(dailyorders).forEach(function (order) {
+    Object.keys(dailyorders).forEach(function (order, index) {
       if (gager[k].account_number === dailyorders[order].customernumber) {
-        console.log("cool");
+        reminder = Date.now() + 604800000;
+        duedate = Date.now() + 1209600000;
+        setTimeout(function () {
+          axios({
+            method: 'POST',
+            url: 'https://api.hubapi.com/engagements/v1/engagements?hapikey=' + hapikey,
+            data: 
+              { "engagement": 
+                { "active": true,
+                  "ownerId": gager[k].hubspot_owner_id,
+                  "type": "TASK",
+                  "timestamp": duedate
+                },
+                "associations": {
+                    "contactIds": [gager[k].vid]
+                },
+                "metadata": {
+                  "body": "Call and confirm she received shipment of order " + dailyorders[order].ordernumber + ". Tracking number(s): " + dailyorders[order].TrackingInfo.join("  ") +".",
+                  "subject": "Reason for Call: Confirm Order Receipt",
+                  "status": "NOT_STARTED",
+                  "forObjectType": "CONTACT",
+                  "taskType": "CALL",
+                  "reminders": [reminder],
+                  "sendDefaultReminder": true
+                }
+              }
+          })
+          .then(function (response) {
+            console.log(response.status);
+          })
+          .catch(function (error) {
+            console.log(error.IncomingMessage);
+          });
+        }, index * 1500);
       }
     });
   });
 }
 
-gageBuilder();
-
-// SUBMIT TASK ENGAGEMENTS FOR THE ORDERS INVOICED THAT DAY TO HUBSPOT. 
-function engagementCreation() {
-  var gage = fs.readFileSync('querydata.js', 'utf-8');
-  gage = JSON.parse(gage);
-  console.log(gage);
-  gage.forEach (function (input, index) {
-  //console.log(input.length);
-    
-    setTimeout(function () {
-      axios({
-        method: 'POST',
-        url: 'https://api.hubapi.com/engagements/v1/engagements?hapikey=09c5f18b-d855-4d83-a770-063d908f9466',
-        data:  gage
-      })
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error.IncomingMessage);
-      });
-    }, index * 1500);
-  });
-}
-
-str = {
-  "engagement": {
-      "active": true,
-      "ownerId": 30951267,
-      "type": "TASK",
-      "timestamp": 1521556466000
-  },
-  "associations": {
-      "contactIds": [9002]
-  },
-  "metadata": {
-    "body": "Call and confirm she received shipment of order 800018739 tracking number 789403823511.",
-    "subject": "Task title",
-    "status": "NOT_STARTED",
-    "forObjectType": "CONTACT",
-    "taskType": "CALL",
-    "reminders": [1519045200000],
-    "sendDefaultReminder": true
-  }
-};
+//gageBuilder();

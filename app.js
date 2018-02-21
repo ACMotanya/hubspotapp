@@ -6,9 +6,10 @@ const fs = require('fs');
 const cors = require('cors');
 const sql = require('mssql');
 const config = require('./config/DB');
+const dotenv = require('dotenv').config();
 var Item;
 var json = [];
-
+const hapikey = process.env.HAPIKEY;
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(cors());
@@ -39,12 +40,13 @@ app.listen(3000, () => {
 // PULL BACK ALL CONTACTS WITH ACCOUNT NUMBER AND SAVE IN A VARIABLE  - DONEEE
 ////////////////////////////////////////////////////////////////////////
 /*
-1) helloWork                --> Pull back contacts and save in file so I can correlate the VID from HubSpot and Account # in Southware. Save in 2018contact.js  ASYNC
+1) helloWork                --> Pull back contacts and save in file so I can correlate the VID from HubSpot and Account # in Southware. Save in contact.js  ASYNC
 2) exeQuery                 --> Run query against SWDB and get all the contacts that haves orders and need to be updated that day. SYNC
 3) customerUpdate           --> Run query against SWDB and get aggregated order data for each customer that was pulled back in the exeQuery function SYNC
 4) formatSalesDataForUpload --> Create a file or variable to hold data that is formatted so it can be uploaded to HubSpot. - SYNC
 5) readWriteBatch           --> If hubspot upload is bigger than 100 records, you must run this function and batch the records in array of 100 elements. 
 6) hubspotUpload            --> Grabs the file or variable and uploads the changes to HubSpot!!
+7) gageBuilder              --> Builds the task engagements and upload them to hubspot
 */
 var formatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
@@ -54,8 +56,9 @@ var formatter = new Intl.NumberFormat('en-US', {
   // and is usually already 2
 });
 function helloWork(vid, cb) {
-	axios.get('https://api.hubapi.com/contacts/v1/lists/all/contacts/all?hapikey=09c5f18b-d855-4d83-a770-063d908f9466&property=account_number&property=hubspot_owner_id&count=100&vidOffset=' + vid + '')
+	axios.get('https://api.hubapi.com/contacts/v1/lists/all/contacts/all?hapikey='+ hapikey +'&property=account_number&property=hubspot_owner_id&count=100&vidOffset=' + vid + '')
 		.then(function (response) {
+      //console.log(response.data.contacts);
       contacts = response.data.contacts;
       contacts.forEach( function (contact) {
         if (contact.properties.account_number) {
@@ -74,12 +77,15 @@ function helloWork(vid, cb) {
         }, 2000);
       } else {
         json = JSON.stringify(json);
-        fs.appendFile("2018contact.js", json, function(err){
+        fs.appendFile("contact.js", json, function(err){
           if(err) throw err;
-          console.log('IS WRITTEN');
+          console.log('IT IS WRITTEN');
         });
       }
-		})
+    })
+    .then (exeQuery())
+    .then (customerUpdate())
+    .then ()
 		.catch(function (error) {
 			console.log(error);
 		});
@@ -196,3 +202,67 @@ function hubspotUpload() {
 		console.log(error.IncomingMessage);
 	});
 }
+
+
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+// BUILD TASK ENGAGEMENTS JSON FOR THE ORDERS INVOICED THAT DAY.
+counter = 0;
+
+function gageBuilder() {
+  var gager = fs.readFileSync('2018contact.js', 'utf-8');
+  gager = JSON.parse(gager);
+  var dailyorders = fs.readFileSync('querydata.js', 'utf-8');
+  dailyorders = JSON.parse(dailyorders);
+
+  Object.keys(gager).forEach(function(k) {
+    counter++;
+    Object.keys(dailyorders).forEach(function (order, index) {
+      if (gager[k].account_number === dailyorders[order].customernumber) {
+        reminder = Date.now() + 604800000;
+        duedate = Date.now() + 1209600000;
+        setTimeout(function () {
+          axios({
+            method: 'POST',
+            url: 'https://api.hubapi.com/engagements/v1/engagements?hapikey=09c5f18b-d855-4d83-a770-063d908f9466',
+            data: 
+              { "engagement": 
+                { "active": true,
+                  "ownerId": gager[k].hubspot_owner_id,
+                  "type": "TASK",
+                  "timestamp": duedate
+                },
+                "associations": {
+                    "contactIds": [gager[k].vid]
+                },
+                "metadata": {
+                  "body": "Call and confirm she received shipment of order " + dailyorders[order].ordernumber + ". Tracking number(s): " + dailyorders[order].TrackingInfo.join("  ") +".",
+                  "subject": "Reason for Call: Confirm Order Receipt",
+                  "status": "NOT_STARTED",
+                  "forObjectType": "CONTACT",
+                  "taskType": "CALL",
+                  "reminders": [reminder],
+                  "sendDefaultReminder": true
+                }
+              }
+          })
+          .then(function (response) {
+            console.log(response.status);
+          })
+          .catch(function (error) {
+            console.log(error.IncomingMessage);
+          });
+        }, index * 1500);
+      }
+    });
+  });
+}
+
+helloWork()
+  .then (exeQuery())
+  .then (customerUpdate())
+  .then ()
+	.catch(function (error) {
+		console.log(error);
+	});

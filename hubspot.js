@@ -34,19 +34,30 @@ var formatter = new Intl.NumberFormat('en-US', {
 function helloWork(vid, cb) {
 	axios.get('https://api.hubapi.com/contacts/v1/lists/all/contacts/all?hapikey=09c5f18b-d855-4d83-a770-063d908f9466&property=account_number&count=100&vidOffset=' + vid + '')
 		.then(function (response) {
-			console.log(response.data.contacts);
-
-      fs.appendFile("2018contact.js", json, function(err){
-        if(err) throw err;
-        console.log('IS WRITTEN');
+     // console.log(response.data.contacts);
+      looper = response.data.contacts;
+      looper.forEach(function (loop) {
+        if (loop.properties.account_number) {
+          console.log(loop.properties.account_number.value);
+        
+          json.push([loop.vid, loop.properties.account_number.value])
+          fs.appendFile("new2018.js", json, function(err){
+      //      if(err) throw err;
+         });
+        }
       });
-      json = ", " + JSON.stringify(response.data.contacts);
+      
+      
+      console.log('IS WRITTEN');
+  
+      //json = ", " + JSON.stringify(response.data.contacts);
 			if (response.data['has-more']) {
+        json.push(", ");
         setTimeout(function () {
           helloWork(response.data['vid-offset']);
         }, 2000);
       }
-		})
+    })
 		.catch(function (error) {
 			console.log(error);
 		});
@@ -55,7 +66,7 @@ function helloWork(vid, cb) {
 	//}
 }
 
-//helloWork(0);
+helloWork(0);
 
 
 ////////////////////////////////////////////////////////////////////////
@@ -107,7 +118,6 @@ function customerUpdate () {
           });
         }
       });
-      
     });
   });
 }

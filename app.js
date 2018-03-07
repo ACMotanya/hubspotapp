@@ -41,7 +41,7 @@ app.listen(3000, () => {
 ////////////////////////////////////////////////////////////////////////
 /*
 1) helloWork                --> Pull back contacts and save in file so I can correlate the VID from HubSpot and Account # in Southware. Save in contact.js  ASYNC
-2) exeQuery                 --> Run query against SWDB and get all the contacts that haves orders and need to be updated that day. SYNC
+2) exeQuery                 --> Run query against SWDB and get all the contacts that have orders and need to be updated that day. SYNC
 3) customerUpdate           --> Run query against SWDB and get aggregated order data for each customer that was pulled back in the exeQuery function SYNC
 4) formatSalesDataForUpload --> Create a file or variable to hold data that is formatted so it can be uploaded to HubSpot. - SYNC
 5) readWriteBatch           --> If hubspot upload is bigger than 100 records, you must run this function and batch the records in array of 100 elements. 
@@ -58,7 +58,7 @@ var formatter = new Intl.NumberFormat('en-US', {
 function helloWork(vid, cb) {
 	axios.get('https://api.hubapi.com/contacts/v1/lists/all/contacts/all?hapikey='+ hapikey +'&property=account_number&property=hubspot_owner_id&count=100&vidOffset=' + vid + '')
 		.then(function (response) {
-      //console.log(response.data.contacts);
+      console.log(response.data.contacts);
       contacts = response.data.contacts;
       contacts.forEach( function (contact) {
         if (contact.properties.account_number) {
@@ -80,12 +80,18 @@ function helloWork(vid, cb) {
         fs.appendFile("contact.js", json, function(err){
           if(err) throw err;
           console.log('IT IS WRITTEN');
+          exeQuery(03/06/2018)
+            .then(customerUpdate()
+              .then(formatSalesDataForUpload()
+                .then(hubspotUpload()
+                  .then(gageBuilder())
+                )
+              )
+            );
+          
         });
       }
     })
-    .then (exeQuery())
-    .then (customerUpdate())
-    .then ()
 		.catch(function (error) {
 			console.log(error);
 		});
@@ -119,25 +125,24 @@ function customerUpdate () {
   var customerdata = fs.readFileSync('querydata.js', 'utf-8');
   customerdata = JSON.parse(customerdata);
   console.log(customerdata);
-  sql.connect(config, err => {
+  //sql.connect(config, err => {
     var request = new sql.Request();
     Object.keys(customerdata).forEach(function(k){
-	 //   console.log(customerdata[k].customernumber);
-	                            
+	// console.log(customerdata[k].customernumber);                          
       request.query("SELECT t.customernumber, sum(tprice)as TSales, sum(tcnt) as TOrders from ( SELECT a.customernumber, sum(totalprice)as TPrice,Sum(totalcost) as TCost,Sum(totaldiscountamt) as TDisc, count(totalprice)as tcnt, b.emailaddress FROM SWCCSHST1 a left outer join swccrcust b on a.customernumber = b.customernumber where Year(invoicedate) = '2018' and (totalcost <> 0) and ((OrderType ='R') Or (OrderType = 'H')) and locationnumber = '800' and LTRIM(RTRIM(b.customernumber))  = '"+ customerdata[k].customernumber +"' group by a.customernumber, b.emailaddress UNION ALL select c.customernumber, sum(totalprice)as TPrice,Sum(totalcost) as TCost,Sum(totaldiscount) as TDisc, count(totalprice)as tcnt, d.emailaddress from SWCCSBIL1 c left outer join swccrcust d on c.customernumber = d.customernumber where Year(orderdate) = '2016' and (totalcost <> 0) and ((OrderType ='R') Or (OrderType = 'H')) and locationnumber = '800' and LTRIM(RTRIM(d.customernumber))  = '"+ customerdata[k].customernumber +"' group by c.customernumber, d.emailaddress) t group by t.customernumber, t.emailaddress order by t.customernumber", (err, result) => {
         itemsProcessed++;
         custitem = JSON.stringify(result.recordset);
         customersToUpdate.push(custitem);
         console.log(customersToUpdate);
         if(itemsProcessed === customerdata.length) {
-          fs.writeFile('2018querydata.js', JSON.stringify(customersToUpdate), 'utf8', (error) => {
+          fs.writeFile('querydata.js', JSON.stringify(customersToUpdate), 'utf8', (error) => {
             if (error)
             console.log(error);
           });
         }
       });
     });
-  });
+ // });
 }
 
 //FORMATS DATA SO I CAN IMPORT INTO HUBSPOT FOR THE DAILY SALES DATA ONLY
@@ -148,7 +153,7 @@ function formatSalesDataForUpload() {
   var data = fs.readFileSync('2018contact.js', 'utf-8');
   data = JSON.parse(data);
   console.log(data.length);
-  var query_data = fs.readFileSync('2018querydata.js', 'utf-8');
+  var query_data = fs.readFileSync('querydata.js', 'utf-8');
   query_data = JSON.parse(query_data);
 
   data.forEach(function (batch) {
@@ -259,10 +264,4 @@ function gageBuilder() {
   });
 }
 
-helloWork()
-  .then (exeQuery())
-  .then (customerUpdate())
-  .then ()
-	.catch(function (error) {
-		console.log(error);
-	});
+helloWork(0);

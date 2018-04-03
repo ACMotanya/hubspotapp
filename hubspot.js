@@ -17,7 +17,7 @@ const server = https.createServer((req, res) => {
 });
 
 server.listen(port, hostname, () => {
-	console.log(`Server running at https://${hostname}:${port}/`);
+  console.log(`Server running at https://${hostname}:${port}/`);
 });
 
 
@@ -63,9 +63,9 @@ function helloWork(vid, cb) {
 		.catch(function (error) {
 			console.log(error);
 		});
-	//if (cb && typeof (cb) === "function") {
-	//	writeMeJesus();
-	//}
+	if (cb && typeof (cb) === "function") {
+		cb();
+	}
 }
 
 //helloWork(0);
@@ -76,7 +76,7 @@ function helloWork(vid, cb) {
 ////////////////////////////////////////////////////////////////////////
 
 // Get customer number and invoice number from query.
-var customersToUpdate = [];
+//var customersToUpdate = [];
 
 function exeQuery(date) {
 	sql.connect(config, err => {
@@ -89,7 +89,7 @@ function exeQuery(date) {
         if (item[k].TrackingInfo) {
           item[k].TrackingInfo = item[k].TrackingInfo.split("  ");
         } else {
-          item[k].TrackingInfo = "None Provided.";
+          item[k].TrackingInfo = ["None Provided"];
         }
         if (item[k].MethodInfo)
           item[k].MethodInfo = item[k].MethodInfo.split("  ");
@@ -103,7 +103,7 @@ function exeQuery(date) {
   });
 }
 //exeQuery("2/19/2018");
-var itemsProcessed = 0;
+//var itemsProcessed = 0;
 
 function customerUpdate () {
   var customerdata = fs.readFileSync('querydata.js', 'utf-8');
@@ -136,8 +136,8 @@ function customerUpdate () {
 ///////////////////////////////////////////////////////////////////////
 //FORMATS DATA SO I CAN IMPORT INTO HUBSPOT FOR THE DAILY SALES DATA ONLY
 //NEEDS LOGGING INFORMATION IF CUSTOMER IS NOT IN THE HUBSPOT
-var cntr = 0;
-var updated_json = [];
+//var cntr = 0;
+//var updated_json = [];
 function formatSalesDataForUpload() {
   var data = fs.readFileSync('2018contact.js', 'utf-8');
   data = JSON.parse(data);
@@ -168,8 +168,8 @@ function formatSalesDataForUpload() {
 
 
 
-var cntr = 0;
-var updated_json = [];
+//var cntr = 0;
+//var updated_json = [];
 
 function formatWholeSalePrice() {
   var data = fs.readFileSync('webinfo.js', 'utf-8');
@@ -224,8 +224,8 @@ function formatMoneyforSalesDataDaily() {
 ///////////////////////////////////////////////////////////////////////
 //FORMATS DATA SO I CAN IMPORT INTO HUBSPOT FOR THE LOGIN INFORMATION ONLY
 
-var cntr = 0;
-var updated_json = [];
+//var cntr = 0;
+//var updated_json = [];
 function formatLogin() {
   var data = fs.readFileSync('2018contact.js', 'utf-8');
   data = JSON.parse(data);
@@ -401,3 +401,39 @@ function gageBuilder() {
 }
 
 //gageBuilder();
+
+
+
+var cntr = 0;
+var updated_json = [];
+
+function addDesc() {
+  var data = fs.readFileSync('wholesaleprice.js', 'utf-8');
+  data = JSON.parse(data);
+
+  var query_data = fs.readFileSync('itemdesc.js', 'utf-8');
+  query_data = JSON.parse(query_data);
+  console.log(data.length);
+  data.forEach(function (batch) {
+    cntr++;  
+    query_data.forEach(function (item) {
+
+      if (batch.itemnum === item.item && (batch.desc1 === "" || batch.desc1 === " ")) {
+        //console.log("HI! I updated " + item.item + " and also " + batch.itenum + " " + cntr);
+        updated_json.push({"itemnum":batch.itemnum,"location":"800","shortdesc":item.desc,"shortdesc2":batch.desc2,"dimensions":batch.dimensions,"oldwholprice":batch.oldwholeprice});
+   //   } else {
+  //      updated_json.push({"itemnum":batch.itemnum,"location":"800","shortdesc":batch.desc1,"shortdesc2":batch.desc2,"dimensions":batch.dimensions,"oldwholprice":batch.oldwholeprice});
+  //    }
+      }
+        if(cntr === 1691) {
+          //console.log(updated_json);
+          fs.writeFile('wholesaleprice2.js', JSON.stringify(updated_json), 'utf8');
+        }
+        //console.log(cntr);
+   //   }
+    });
+  });
+  console.log("finished");
+}
+
+addDesc();

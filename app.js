@@ -55,10 +55,9 @@ var formatter = new Intl.NumberFormat('en-US', {
   // the default value for minimumFractionDigits depends on the currency
   // and is usually already 2
 });
-function helloWork(vid, cb) {
-	axios.get('https://api.hubapi.com/contacts/v1/lists/all/contacts/all?hapikey='+ hapikey +'&property=account_number&property=hubspot_owner_id&count=100&vidOffset=' + vid + '')
-		.then(function (response) {
-      console.log(response.data.contacts);
+function helloWork(vid) {
+  axios.get('https://api.hubapi.com/contacts/v1/lists/all/contacts/all?hapikey='+ hapikey +'&property=account_number&property=hubspot_owner_id&count=100&vidOffset=' + vid + '')
+    .then(function (response) {
       contacts = response.data.contacts;
       contacts.forEach( function (contact) {
         if (contact.properties.account_number) {
@@ -71,73 +70,74 @@ function helloWork(vid, cb) {
         }
       });
       
-			if (response.data['has-more']) {
+      if (response.data['has-more']) {
         setTimeout(function () {
           helloWork(response.data['vid-offset']);
-        }, 2000);
+        }, 1000);
       } else {
         json = JSON.stringify(json);
         fs.appendFile("contact.js", json, function(err){
           if(err) throw err;
           console.log('IT IS WRITTEN');
-          exeQuery(03/06/2018)
-            .then(customerUpdate()
-              .then(formatSalesDataForUpload()
-                .then(hubspotUpload()
-                  .then(gageBuilder())
-                )
-              )
-            );
-          
+          exeQuery("03/13/2018");
         });
       }
     })
-		.catch(function (error) {
-			console.log(error);
-		});
+    .catch(function (error) {
+      console.log(error);
+    });
 }
 
 var customersToUpdate = [];
 
 function exeQuery(date) {
-	sql.connect(config, err => {
+	sql.connect(config).then(() =>  {
     var request = new sql.Request();
-    
-    request.query("SELECT a.ordernumber, a.customernumber From dbo.SWCCSHST1 a LEFT Outer Join dbo.HubSpotPushOrders b on a.ordernumber = b.OrderNumber Where (b.OrderNumber is null) and (a.invoicedate = '" + date + "') and (locationnumber = '800') order by a.ordernumber", (err, result) => {
-    //error checks  
-    //console.log(result);
+    request.query("SELECT a.ordernumber, a.invoicedate, a.totalprice, a.customernumber, a.invoicenumber, stuff((select ' ' + LTRIM(RTRIM(c.trackingnumber))+ ' ' from SWCCSSBOX c where a.invoicenumber = c.invoicenumber and c.boxnumber = 1 FOR XML PATH('')) ,1,1,'') AS TrackingInfo, stuff((select ' ' + LTRIM(RTRIM(c.shipmethod))+ ' ' from SWCCSSBOX c where a.invoicenumber = c.invoicenumber and c.boxnumber = 1 FOR XML PATH('')) ,1,1,'') AS MethodInfo From dbo.SWCCSHST1 a Left Outer Join dbo.HubSpotPushOrders b on a.ordernumber = b.OrderNumber Where (b.OrderNumber is null) and (a.invoicedate = '" + date + "') and (locationnumber = '800') order by a.ordernumber", (err, result) => {
       item = JSON.stringify(result.recordset);
       item = JSON.parse(item.replace(/"\s+|\s+"/g,'"'));
-      item = JSON.stringify(item);
       console.log(item);
+      Object.keys(item).forEach(function(k){
+        if (item[k].TrackingInfo) {
+          item[k].TrackingInfo = item[k].TrackingInfo.split("  ");
+        } else {
+          item[k].TrackingInfo = "None Provided.";
+        }
+        if (item[k].MethodInfo)
+          item[k].MethodInfo = item[k].MethodInfo.split("  ");
+      });
       
-      fs.writeFile('querydata.js', item, 'utf8', (error) => {
+      fs.writeFile('querydata.js', JSON.stringify(item), 'utf8', (error) => {
         if (error)
-        console.log(error);
+          console.log(error);
+        console.log("exeQuery Complete");
+        customerUpdate();
       });
     });
   });
 }
 
 var itemsProcessed = 0;
-
-function customerUpdate () {
+// counter.
+function customerUpdate() {
   var customerdata = fs.readFileSync('querydata.js', 'utf-8');
   customerdata = JSON.parse(customerdata);
   console.log(customerdata);
   //sql.connect(config, err => {
-    var request = new sql.Request();
+    var request2 = new sql.Request();
     Object.keys(customerdata).forEach(function(k){
 	// console.log(customerdata[k].customernumber);                          
-      request.query("SELECT t.customernumber, sum(tprice)as TSales, sum(tcnt) as TOrders from ( SELECT a.customernumber, sum(totalprice)as TPrice,Sum(totalcost) as TCost,Sum(totaldiscountamt) as TDisc, count(totalprice)as tcnt, b.emailaddress FROM SWCCSHST1 a left outer join swccrcust b on a.customernumber = b.customernumber where Year(invoicedate) = '2018' and (totalcost <> 0) and ((OrderType ='R') Or (OrderType = 'H')) and locationnumber = '800' and LTRIM(RTRIM(b.customernumber))  = '"+ customerdata[k].customernumber +"' group by a.customernumber, b.emailaddress UNION ALL select c.customernumber, sum(totalprice)as TPrice,Sum(totalcost) as TCost,Sum(totaldiscount) as TDisc, count(totalprice)as tcnt, d.emailaddress from SWCCSBIL1 c left outer join swccrcust d on c.customernumber = d.customernumber where Year(orderdate) = '2016' and (totalcost <> 0) and ((OrderType ='R') Or (OrderType = 'H')) and locationnumber = '800' and LTRIM(RTRIM(d.customernumber))  = '"+ customerdata[k].customernumber +"' group by c.customernumber, d.emailaddress) t group by t.customernumber, t.emailaddress order by t.customernumber", (err, result) => {
+      request2.query("SELECT t.customernumber, sum(tprice)as TSales, sum(tcnt) as TOrders from ( SELECT a.customernumber, sum(totalprice)as TPrice,Sum(totalcost) as TCost,Sum(totaldiscountamt) as TDisc, count(totalprice)as tcnt, b.emailaddress FROM SWCCSHST1 a left outer join swccrcust b on a.customernumber = b.customernumber where Year(invoicedate) = '2018' and (totalcost <> 0) and ((OrderType ='R') Or (OrderType = 'H')) and locationnumber = '800' and LTRIM(RTRIM(b.customernumber))  = '"+ customerdata[k].customernumber +"' group by a.customernumber, b.emailaddress UNION ALL select c.customernumber, sum(totalprice)as TPrice,Sum(totalcost) as TCost,Sum(totaldiscount) as TDisc, count(totalprice)as tcnt, d.emailaddress from SWCCSBIL1 c left outer join swccrcust d on c.customernumber = d.customernumber where Year(orderdate) = '2016' and (totalcost <> 0) and ((OrderType ='R') Or (OrderType = 'H')) and locationnumber = '800' and LTRIM(RTRIM(d.customernumber))  = '"+ customerdata[k].customernumber +"' group by c.customernumber, d.emailaddress) t group by t.customernumber, t.emailaddress order by t.customernumber", (err, result) => {
         itemsProcessed++;
         custitem = JSON.stringify(result.recordset);
         customersToUpdate.push(custitem);
         console.log(customersToUpdate);
         if(itemsProcessed === customerdata.length) {
-          fs.writeFile('querydata.js', JSON.stringify(customersToUpdate), 'utf8', (error) => {
+          fs.writeFile('dailyQuerydata.js', JSON.stringify(customersToUpdate), 'utf8', (error) => {
             if (error)
             console.log(error);
+            console.log("customerUpdate Complete");
+            formatSalesDataForUpload();
           });
         }
       });
@@ -145,15 +145,16 @@ function customerUpdate () {
  // });
 }
 
+
 //FORMATS DATA SO I CAN IMPORT INTO HUBSPOT FOR THE DAILY SALES DATA ONLY
 //NEEDS LOGGING INFORMATION IF CUSTOMER IS NOT IN THE HUBSPOT
 var cntr = 0;
 var updated_json = [];
 function formatSalesDataForUpload() {
-  var data = fs.readFileSync('2018contact.js', 'utf-8');
+  var data = fs.readFileSync('contact.js', 'utf-8');
   data = JSON.parse(data);
   console.log(data.length);
-  var query_data = fs.readFileSync('querydata.js', 'utf-8');
+  var query_data = fs.readFileSync('dailyQuerydata.js', 'utf-8');
   query_data = JSON.parse(query_data);
 
   data.forEach(function (batch) {
@@ -169,9 +170,14 @@ function formatSalesDataForUpload() {
 
     console.log(cntr);
     if(cntr === data.length) {
-      updated_json = JSON.stringify(updated_json);
+      //updated_json = JSON.stringify(updated_json);
       console.log(updated_json);
-      fs.writeFile('contactOrderData.js', updated_json, 'utf8');
+      fs.writeFile('contactOrderData.js', JSON.stringify(updated_json), 'utf8', (error) => {
+        if (error)
+          console.log(error);
+        console.log("format complete");
+        hubspotUpload();
+      });
     }
   });
 }
@@ -201,11 +207,12 @@ function hubspotUpload() {
 		data:  newJson
 	})
 	.then(function (response) {
-		console.log(response);
+    console.log(response);
+    gageBuilder();
 	})
 	.catch(function (error) {
 		console.log(error.IncomingMessage);
-	});
+  });
 }
 
 
@@ -216,7 +223,7 @@ function hubspotUpload() {
 counter = 0;
 
 function gageBuilder() {
-  var gager = fs.readFileSync('2018contact.js', 'utf-8');
+  var gager = fs.readFileSync('contact.js', 'utf-8');
   gager = JSON.parse(gager);
   var dailyorders = fs.readFileSync('querydata.js', 'utf-8');
   dailyorders = JSON.parse(dailyorders);
@@ -263,5 +270,8 @@ function gageBuilder() {
     });
   });
 }
+//helloWork(0);
+//exeQuery("3/12/2018");
+//gageBuilder();
 
-helloWork(0);
+

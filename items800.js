@@ -1,0 +1,4033 @@
+[{
+	"vItemNumber": "11767",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11777",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11969",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11986",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12013",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12016",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12108",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "12122",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "12124",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "18001LPNK",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18002LGRN",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18005LCRL",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18005LTEL",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18028BA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18033LGRY",
+	"itemprice_2": 39.99
+}, {
+	"vItemNumber": "18041LBSS",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "18043LTRQ",
+	"itemprice_2": 21.99
+}, {
+	"vItemNumber": "18046LFEB",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18047LGBK",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "PIL107",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "12314",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12330",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12343",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12347",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12362",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12717",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12720",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10390",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "L191540515",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191570217",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191590209",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191600515",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L192110227",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183533358",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183533361",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L190143022",
+	"itemprice_2": 44.99
+}, {
+	"vItemNumber": "L190221505",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "L190340117",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L190380109",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191440244",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11386",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "CD113E",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18048LSFU",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "18056LGRY",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18056LPNK",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18057LBLK",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18068LGPK",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "18068LSBL",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "18068LSWH",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L180520224",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L180520227",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L181970212",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L181980126",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182281320",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L182281422",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L183071902",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183133324",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "L183180126",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183480214",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10011",
+	"itemprice_2": 21.99
+}, {
+	"vItemNumber": "10075",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10105",
+	"itemprice_2": 39.99
+}, {
+	"vItemNumber": "10110",
+	"itemprice_2": 39.99
+}, {
+	"vItemNumber": "10113",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10717",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10727",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10752",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10754",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10762",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10764",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "108BA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "10941",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11314",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11318",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11333",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "1133CA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "10466",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10642",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10644",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "11900ENA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "11945",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11963",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11978",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11989",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11995",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12102",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "12105",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "12128",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "18002LBLU",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18002LMDN",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18003LGRN",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18003LIVR",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18030LLBL",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "18031BA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18031LGYL",
+	"itemprice_2": 6.99
+}, {
+	"vItemNumber": "18034LGRY",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "18041LBSL",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "18041LGHS",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "18043LGRY",
+	"itemprice_2": 21.99
+}, {
+	"vItemNumber": "18046LDEC",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18046LSEP",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10951",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10957",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "109BA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "12311",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12902",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "12905",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "10379",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10410",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10416",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "L191530217",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191620222",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191640251",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191812822",
+	"itemprice_2": 36.99
+}, {
+	"vItemNumber": "L192071902",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "13400",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191311321",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11390",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11413",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11442",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11445",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11448",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11453",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "CD02P",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "CD051",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18048LGBG",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "18053LSBK",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18053RA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18056LBRN",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18056LDKO",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18059LBLK",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18061LSLV",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18063LSLV",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18120LBLK",
+	"itemprice_2": 5.99
+}, {
+	"vItemNumber": "18120LBLS",
+	"itemprice_2": 5.99
+}, {
+	"vItemNumber": "L180520217",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L182000621",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182020251",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182180114",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182200127",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182220517",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182271424",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182280227",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L182281826",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L183050112",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183071901",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10018",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10050",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10737",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10742",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10751",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10761",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10770",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10932",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10947",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11145",
+	"itemprice_2": 8.99
+}, {
+	"vItemNumber": "10475",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10478",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10480",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10620",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11936",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11942",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11948",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11954",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11992",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11998",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12005",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12011",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12101A",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "19018FA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18002LGRY",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18028LPRP",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18030LBLK",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "18031LRED",
+	"itemprice_2": 6.99
+}, {
+	"vItemNumber": "18032LGRY",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18036LBLK",
+	"itemprice_2": 49.99
+}, {
+	"vItemNumber": "18047A",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18047LGFU",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10974",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12136",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12145",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12149",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12341",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12357",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12709",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12715",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "12721",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12723",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10338",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10381",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10396",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "103EA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "103HA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "10413",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10414",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10417",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "L191530227",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191560112",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191610222",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191812917",
+	"itemprice_2": 36.99
+}, {
+	"vItemNumber": "L19199",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L192152502",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L190103227",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L190143026",
+	"itemprice_2": 44.99
+}, {
+	"vItemNumber": "L190540209",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191310125",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191311422",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191360220",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191370116",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191440131",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191440138",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191520222",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18048LSBK",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "18053LSIV",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18228PR",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "L180520109",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L180520127",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L182230212",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182271152",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182271320",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182281820",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L183020227",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183163051",
+	"itemprice_2": 49.99
+}, {
+	"vItemNumber": "L183172820",
+	"itemprice_2": 49.99
+}, {
+	"vItemNumber": "L183480126",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11387",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11416",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11456",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "CD109A",
+	"itemprice_2": 25
+}, {
+	"vItemNumber": "10035",
+	"itemprice_2": 21.99
+}, {
+	"vItemNumber": "10072",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10735",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10756",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10766",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "107BA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "10940",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11142",
+	"itemprice_2": 8.99
+}, {
+	"vItemNumber": "11331",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11939",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11967",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12010",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12017",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18300LPCK",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "19015AST",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18001LBLK",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18001LRED",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18002LSLV",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18002LWHT",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18005LIVY",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18030LGLD",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "18031LDKG",
+	"itemprice_2": 6.99
+}, {
+	"vItemNumber": "18034LBLK",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "18038LBLK",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18041LGHL",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "18044LBLU",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10954",
+	"itemprice_2": 15.99
+}, {
+	"vItemNumber": "12344",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12350",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12708",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12724",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12735",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "12908",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "10339",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10375",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191550117",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191630127",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191780222",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "L191813022",
+	"itemprice_2": 36.99
+}, {
+	"vItemNumber": "L192071901",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L192140227",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "13401",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "13404",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "13407",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L190211502",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L190370109",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L190420609",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L190450109",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191360227",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191440232",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191440235",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191511420",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11396",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11397",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11402",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11405",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11408",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11409",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11432",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11435",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11438",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11439",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "CD03P",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "CD104W",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18048LGFU",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "18048LSBP",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "18053LSBF",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18054LSGN",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18054LSMN",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18058LBLK",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18068LGGD",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "18098LBLK",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18098LGRN",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18229LBWT",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18229MA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "L180520117",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L180520209",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L182020112",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182251206",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182271116",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182281322",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L183040227",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183133310",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "L183133327",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "L183153049",
+	"itemprice_2": 36.99
+}, {
+	"vItemNumber": "L183163027",
+	"itemprice_2": 49.99
+}, {
+	"vItemNumber": "L183200216",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183480114",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L183480120",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L183480226",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L183501202",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10022",
+	"itemprice_2": 21.99
+}, {
+	"vItemNumber": "10102",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "10108",
+	"itemprice_2": 39.99
+}, {
+	"vItemNumber": "10109",
+	"itemprice_2": 39.99
+}, {
+	"vItemNumber": "10111",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10700B",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "10746",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10750",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10760",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10771",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10938",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10943",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10950",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11334",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "1133BA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "10481",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10621",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10627",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10639",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "11732",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11768",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11778",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11940",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12018",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12104",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "12111",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "12123",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "12125",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12127",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "18348BP",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "19131BP",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "19151NP",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "19152BP",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "19160RP",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18001LCHR",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18003LBLK",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18003LLGD",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18005BA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18005LLGR",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18028LBLK",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18044LBLK",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10977",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "109EA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "10391",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10407",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191780214",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "L191812827",
+	"itemprice_2": 36.99
+}, {
+	"vItemNumber": "L19196",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L192130112",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L192152527",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "12310",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12348",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12363",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12716",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12718",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "12730",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "12900",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "12904",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "12911",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "12912",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "L190182502",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L190211527",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L190440109",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L190470209",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191310109",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191360114",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18048LGCP",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "18053LGPK",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18053LGTE",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18054LSBK",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18054NA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18058LBLU",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18062LGLD",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18064LGLD",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18068LGBL",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "18098LBLU",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18202BP",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18229LBLR",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18229LPNK",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L181950227",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182120127",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182140222",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182251205",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182272302",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182281316",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L182282502",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L183133332",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "L183180255",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183200126",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183480127",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L183480215",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11391",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11400",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11430",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11444",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11447",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11451",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "CD107",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "CD121",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "10100",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "TB113",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "10718",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10728",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10730",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10739",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10744",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10753",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10755",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10763",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10765",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10929",
+	"itemprice_2": 15.99
+}, {
+	"vItemNumber": "10930",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "10934",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10431",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10477",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11742",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11762",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11769",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11779",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11782",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11943",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11944",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11958",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11994",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12103",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "18300LCMS",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "19013AST",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "19034PR",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "19181AST",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18003LDTL",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18031LDRD",
+	"itemprice_2": 6.99
+}, {
+	"vItemNumber": "18031LSLV",
+	"itemprice_2": 6.99
+}, {
+	"vItemNumber": "18033LBLK",
+	"itemprice_2": 39.99
+}, {
+	"vItemNumber": "18038LGRY",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10978",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10300A",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "10333",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10334",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10405",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10408",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10421",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191550222",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12129",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12346",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12364",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12719",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "12903",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "L183533359",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L190110120",
+	"itemprice_2": 39.99
+}, {
+	"vItemNumber": "L190110226",
+	"itemprice_2": 39.99
+}, {
+	"vItemNumber": "L190152822",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "L190171501",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "L190171505",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "L190460209",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191311324",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191511116",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191511422",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191520226",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11443",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "CD00PB",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "CD109",
+	"itemprice_2": 50
+}, {
+	"vItemNumber": "18053LSGR",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18056PR",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18067LSLV",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18068LGWH",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "18098LTRQ",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18152BP",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18195BP",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18229LRED",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182132106",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182170127",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182200214",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182210214",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182261202",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182271121",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182271422",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182281816",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L183081901",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183480213",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10016",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10019",
+	"itemprice_2": 21.99
+}, {
+	"vItemNumber": "10042",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10074",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10719",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10722",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10729",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10736",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10743",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10745",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10935",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10946",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10441",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11144",
+	"itemprice_2": 8.99
+}, {
+	"vItemNumber": "11315",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11322",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11336",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11741",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "118BA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "119002BA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "11988",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11997",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "12001",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "12003",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "12004",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "12012",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12015",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18300JA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18302PR",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "19136PR",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "19144PR",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "19154BP",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18001LGRN",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18001LNVY",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18003LBNZ",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18005LPNK",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18041LTPL",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "18043LBLK",
+	"itemprice_2": 21.99
+}, {
+	"vItemNumber": "18043LIVY",
+	"itemprice_2": 21.99
+}, {
+	"vItemNumber": "18046LAUG",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18046LMAY",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18047LSGR",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10006",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12141",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12143",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12144",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12150",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12338",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12355",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12700AG",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "12706",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "12714",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10336",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10337",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10343",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10382",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10398",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "L191530223",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191530251",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191540226",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191812922",
+	"itemprice_2": 36.99
+}, {
+	"vItemNumber": "L19191",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L19193",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L192101902",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "135BA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "L190152827",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "L190221502",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "L190410609",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191370110",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191440144",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191440233",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191511424",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18048LGBK",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "18048LSCP",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "18054LGGD",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18057LBLU",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18058LGLD",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18059LGLD",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18212RP",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18218EP",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18229LPCH",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L180520223",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L182160212",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L183190120",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183190126",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183190227",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183200227",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183480216",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L183480222",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10031",
+	"itemprice_2": 21.99
+}, {
+	"vItemNumber": "10034",
+	"itemprice_2": 21.99
+}, {
+	"vItemNumber": "10076",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11385",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11399",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11406",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11412",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11419",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11420",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11436",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10721",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10733",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10748",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10759",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10769",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10936",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10945",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10440",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "1044A",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "104BES",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "10625",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11146",
+	"itemprice_2": 8.99
+}, {
+	"vItemNumber": "11953",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11955",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11981",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12002",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12107",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "12109",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "12120",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "12126",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "18300LBRD",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18003LCPR",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18041LBKL",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "18041LTPS",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "18046LJAN",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18046LJUN",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18046NA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18047LGWH",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10004",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10973",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10975",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12142",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12313",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12351",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12712",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "1300A",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "10409",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10415",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191610117",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191780213",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "L19189",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L19197",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L192091901",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L192091902",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "13405",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "13408",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "13412",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L190152922",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "L190171502",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "L190530209",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191370227",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191520114",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18054LSNY",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18057EA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18058LWHT",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18059LWHT",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18065LSLV",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18068LSGR",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "18098PR",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "L180413020",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "L180520220",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L181950616",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182180227",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182180616",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182241202",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183162851",
+	"itemprice_2": 49.99
+}, {
+	"vItemNumber": "L183480112",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L183480220",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11388",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11404",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11407",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11434",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11437",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11446",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11449",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "CD01P",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "CD121A",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "CD121B",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "10010",
+	"itemprice_2": 21.99
+}, {
+	"vItemNumber": "10024",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10032",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10058",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10104",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "10461",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10476",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10479",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10628",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "11316",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11317",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11319",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11756",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11781",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11932",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11934",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11946",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11990",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11996",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "12019",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12112",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "12114",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "18300LELP",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "19021JA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18003LDPR",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18028LBRN",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18030BA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18030LTAN",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "18031LDKB",
+	"itemprice_2": 6.99
+}, {
+	"vItemNumber": "18046LNOV",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10376",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10389",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10392",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10419",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191580117",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191813027",
+	"itemprice_2": 36.99
+}, {
+	"vItemNumber": "L19188",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L192120227",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12138",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12349",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12710",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "12733",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12906",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "13410",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L190143027",
+	"itemprice_2": 44.99
+}, {
+	"vItemNumber": "L190152927",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "L190400609",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L190430109",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191440132",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191511321",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11403",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11415",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11418",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11422",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11424",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11427",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11433",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "CD119BUR",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18048LGIV",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "18053LGMR",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18058LGRN",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18058LPNK",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18060LGLD",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18068LSPK",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "18227EP",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "L182000251",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182120517",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182150227",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182180652",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182251201",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182271324",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182281852",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L183133321",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "L183172849",
+	"itemprice_2": 49.99
+}, {
+	"vItemNumber": "L183180216",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183180222",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183200120",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183480202",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L183480227",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10023",
+	"itemprice_2": 21.99
+}, {
+	"vItemNumber": "10106",
+	"itemprice_2": 39.99
+}, {
+	"vItemNumber": "10758",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10768",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10917",
+	"itemprice_2": 15.99
+}, {
+	"vItemNumber": "34737029",
+	"itemprice_2": 1.99
+}, {
+	"vItemNumber": "1043A",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "10442",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10585",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10614",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10630",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10633",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10636",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "11321",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11740",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11755",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "117EA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "11929",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11949",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11985",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11993",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11999",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12118",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "18300LGRL",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "19178PR",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18001LLTB",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18005LBLK",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18031LLTO",
+	"itemprice_2": 6.99
+}, {
+	"vItemNumber": "18043LBLP",
+	"itemprice_2": 21.99
+}, {
+	"vItemNumber": "10395",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10422",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191650109",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191813017",
+	"itemprice_2": 36.99
+}, {
+	"vItemNumber": "L19195",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L192130227",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12132",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12135",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12140",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12146",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12359",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12360",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12700AS",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "12705",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12727",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "12909",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "12914",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "13409",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183533360",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L190142922",
+	"itemprice_2": 44.99
+}, {
+	"vItemNumber": "L190153022",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "L190153027",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "L190182527",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L190211501",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L190221527",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "L190231502",
+	"itemprice_2": 44.99
+}, {
+	"vItemNumber": "L190231505",
+	"itemprice_2": 44.99
+}, {
+	"vItemNumber": "L190390109",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191311316",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191440238",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191510125",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11389",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11392",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11395",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11421",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11455",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18057LGRN",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18057LPNK",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18068LGTL",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "18068LSGD",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "18098LPCH",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "L181950113",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L181970123",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182020627",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182210505",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182271417",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L183133334",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "L183152849",
+	"itemprice_2": 36.99
+}, {
+	"vItemNumber": "L183162820",
+	"itemprice_2": 49.99
+}, {
+	"vItemNumber": "L183190222",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183480102",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L183501206",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10047",
+	"itemprice_2": 21.99
+}, {
+	"vItemNumber": "10048",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10052",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10073",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10103",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "1010A",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "10720",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10939",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "11143",
+	"itemprice_2": 8.99
+}, {
+	"vItemNumber": "11324",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11328",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10432",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10435",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10438",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10456",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10592",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "12151",
+	"itemprice_2": null
+}, {
+	"vItemNumber": "11743",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11744",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11763",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11764",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11774",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11780",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "118V2A",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "11941",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11991",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12007",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12106",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "18318PR",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18002LPRP",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18005LBRN",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18005LGRN",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18005LMRN",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18030LGRY",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "18031LBLK",
+	"itemprice_2": 6.99
+}, {
+	"vItemNumber": "18031LWHT",
+	"itemprice_2": 6.99
+}, {
+	"vItemNumber": "18046LJUL",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18046LMAR",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10955",
+	"itemprice_2": 15.99
+}, {
+	"vItemNumber": "10377",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "103EVA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "L191600226",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191650209",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191780224",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "L191812817",
+	"itemprice_2": 36.99
+}, {
+	"vItemNumber": "L19194",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L192081902",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12147",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12345",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12711",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "12713",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12725",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "13413",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L190110118",
+	"itemprice_2": 39.99
+}, {
+	"vItemNumber": "L190132727",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "L190153017",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "L190231527",
+	"itemprice_2": 44.99
+}, {
+	"vItemNumber": "L190480209",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11398",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11452",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18048LSBG",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "18056LBLK",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18068LSTL",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "18120LGRY",
+	"itemprice_2": 5.99
+}, {
+	"vItemNumber": "18229LBRN",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182150616",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182230123",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182261201",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182261205",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L183152820",
+	"itemprice_2": 36.99
+}, {
+	"vItemNumber": "L183153051",
+	"itemprice_2": 36.99
+}, {
+	"vItemNumber": "L183172827",
+	"itemprice_2": 49.99
+}, {
+	"vItemNumber": "L183173051",
+	"itemprice_2": 49.99
+}, {
+	"vItemNumber": "L183480113",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L183480116",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10020",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10043",
+	"itemprice_2": 21.99
+}, {
+	"vItemNumber": "10044",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10059",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10060",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10700C",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "10713",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10714",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10723",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10724",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10731",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10749",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11323",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11335",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10629",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "11733",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11900BGA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "11987",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12000",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "12101",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "19010AST",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "19017AST",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "19188PR",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18001LGLD",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18003LPRP",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18003LTAN",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18005LSVR",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18031LSKB",
+	"itemprice_2": 6.99
+}, {
+	"vItemNumber": "18032LBLK",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18036LGRY",
+	"itemprice_2": 49.99
+}, {
+	"vItemNumber": "18041LBKS",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "18046LOCT",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18047LSLB",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10008",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10965",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "12337",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12339",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12342",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12354",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "1238AST",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "123BA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "12910",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "12915",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "10397",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10399",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10420",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191560222",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191580251",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L192081901",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L192101901",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L190142926",
+	"itemprice_2": 44.99
+}, {
+	"vItemNumber": "L190152917",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "L190360117",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191311116",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191311120",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191360116",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191440135",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191511322",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191520515",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18053LGRD",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18054LGGN",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18054LSGY",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18057LGLD",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18059LPNK",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18068BA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18068LSBK",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "18120LIVY",
+	"itemprice_2": 5.99
+}, {
+	"vItemNumber": "18229LBLW",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L180413049",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "L182020120",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182020149",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182190222",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182210220",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182261206",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182271322",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182281822",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L183020112",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183060112",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183091902",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183153020",
+	"itemprice_2": 36.99
+}, {
+	"vItemNumber": "L183172851",
+	"itemprice_2": 49.99
+}, {
+	"vItemNumber": "L183173027",
+	"itemprice_2": 49.99
+}, {
+	"vItemNumber": "L183190255",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183480122",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10028",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10030",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10112",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10114",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "CD104",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "CD1051",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "CD113EB",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "10747",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10942",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10944",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "10426",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "1051A",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "10622",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10624",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11325",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11326",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11332",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11745",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11765",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11775",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11783",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12014",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12110",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "12116",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "18313TA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18001BA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18002LBLK",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18031LBRY",
+	"itemprice_2": 6.99
+}, {
+	"vItemNumber": "18031LGLD",
+	"itemprice_2": 6.99
+}, {
+	"vItemNumber": "18031LGRY",
+	"itemprice_2": 6.99
+}, {
+	"vItemNumber": "10952",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10960",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10966",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10979",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12137",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12139",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12148",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "123NA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "12722",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "12731",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "12901",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "12913",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "10340",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10345",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10378",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191620112",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191640117",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L19200",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "13402",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "13415",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183533364",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L190110227",
+	"itemprice_2": 39.99
+}, {
+	"vItemNumber": "L190231501",
+	"itemprice_2": 44.99
+}, {
+	"vItemNumber": "L190350117",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191311322",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191311417",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191510109",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191511120",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191511324",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191511417",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191520227",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10012",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10040",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10057",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10061",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10101",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "11401",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11414",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11417",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11431",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11450",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "CD052",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18053LSBL",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18054LGBK",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18054LGNY",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18054LSGD",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18056LBLU",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18056LGLD",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18057LWHT",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18066LGLD",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18068LGGR",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "18098NA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18120LPNK",
+	"itemprice_2": 5.99
+}, {
+	"vItemNumber": "18224PR",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "L180412849",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "L181990106",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182160123",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182220127",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182241205",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182251202",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182271420",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182281818",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L183152851",
+	"itemprice_2": 36.99
+}, {
+	"vItemNumber": "10715",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10725",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10757",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10767",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11141",
+	"itemprice_2": 8.99
+}, {
+	"vItemNumber": "10429",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10430",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10436",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10439",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10458",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10584",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10616",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11754",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "117BA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "11900BA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "11930",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11937",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11951",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11952",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11983",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12006",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12008",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12115",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "12117",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "12119",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "18300LCMR",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18300LKEY",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18005LBLU",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18031LPRP",
+	"itemprice_2": 6.99
+}, {
+	"vItemNumber": "18044LPNK",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18046LAPR",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18047LSBK",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10959",
+	"itemprice_2": 15.99
+}, {
+	"vItemNumber": "10971",
+	"itemprice_2": 15.99
+}, {
+	"vItemNumber": "10972",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12130",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12133",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12134",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12312",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "124BA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "128V2A",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "12900A",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "10348",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10401",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10412",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10423",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191530222",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191630217",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L192140112",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L190103220",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L190132717",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "L190142822",
+	"itemprice_2": 44.99
+}, {
+	"vItemNumber": "L190142927",
+	"itemprice_2": 44.99
+}, {
+	"vItemNumber": "L190211505",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191370220",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191440133",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10036",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "T113N",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "11394",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "113RD",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "11410",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11429",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11454",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "CD00P",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18053LSTL",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18054LGGY",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18054LGMN",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18056LGRN",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18059LGRN",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18060NA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18098LBRN",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "L180520122",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L181950620",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L181990627",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182000214",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182000515",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182140120",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182190120",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182210606",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182271316",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182282501",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L183040112",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183081902",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183101902",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183133317",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "L183152827",
+	"itemprice_2": 36.99
+}, {
+	"vItemNumber": "L183163020",
+	"itemprice_2": 49.99
+}, {
+	"vItemNumber": "L183173049",
+	"itemprice_2": 49.99
+}, {
+	"vItemNumber": "L183180120",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183190216",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183501205",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L183533357",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10741",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10772",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10949",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10425",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10428",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10433",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10482",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10619",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11320",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11327",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11329",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11757",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11766",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11776",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11947",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11950",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11956",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "119BA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "12100A",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "19022AST",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18003LGRY",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18005LSNK",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18028LGRN",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18030LCPR",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "18030LSLV",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "18031LMGR",
+	"itemprice_2": 6.99
+}, {
+	"vItemNumber": "18047LGGD",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10007",
+	"itemprice_2": 21.99
+}, {
+	"vItemNumber": "10969",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10970",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10976",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "12131",
+	"itemprice_2": 3.99
+}, {
+	"vItemNumber": "12340",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12358",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12707",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "12732",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12734",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "12907",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "10380",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10388",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10400",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "L191570127",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191590109",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L192110112",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L192120112",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L190103226",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L190142827",
+	"itemprice_2": 44.99
+}, {
+	"vItemNumber": "L190221501",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "L190520209",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191311424",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191530214",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18048BA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18048LSIV",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "18053LGBK",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18053LGPBR",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18056NA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18098LGRY",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18098LRED",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18120LBLU",
+	"itemprice_2": 5.99
+}, {
+	"vItemNumber": "L180412820",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "L180520120",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L181960222",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182020621",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182170214",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182241206",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182281814",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L183091901",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183101901",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183133318",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "L183153027",
+	"itemprice_2": 36.99
+}, {
+	"vItemNumber": "L183162827",
+	"itemprice_2": 49.99
+}, {
+	"vItemNumber": "L183180227",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183200255",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183480212",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L183501201",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11411",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11440",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10107",
+	"itemprice_2": 39.99
+}, {
+	"vItemNumber": "T113NB",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "10716",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10726",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10732",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10734",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10738",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10740",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10937",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10948",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "10643",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "11313",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11330",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "18300LMDL",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "19014AST",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "119002NA",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "11935",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11972",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "11984",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12009",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12100B",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "12113",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "12121",
+	"itemprice_2": 2.99
+}, {
+	"vItemNumber": "18001LGRY",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18002LGLD",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18003LNVY",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "18030LTRQ",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "18031LRYB",
+	"itemprice_2": 6.99
+}, {
+	"vItemNumber": "18047LSWH",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12361",
+	"itemprice_2": 24.99
+}, {
+	"vItemNumber": "12704",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12726",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "12728",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "12729",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10346",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10349",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10393",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "10394",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "L191812927",
+	"itemprice_2": 36.99
+}, {
+	"vItemNumber": "L19190",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L19192",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "1311A",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "L190103218",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L190132722",
+	"itemprice_2": 29.99
+}, {
+	"vItemNumber": "L190142826",
+	"itemprice_2": 44.99
+}, {
+	"vItemNumber": "L190152817",
+	"itemprice_2": 31.99
+}, {
+	"vItemNumber": "L191311420",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191440231",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L191511316",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L191520127",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10046",
+	"itemprice_2": 21.99
+}, {
+	"vItemNumber": "TB113B",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "11393",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "11423",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11425",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11426",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11428",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "11441",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "CD04P",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18048LGBP",
+	"itemprice_2": 9.99
+}, {
+	"vItemNumber": "18059LBLU",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "18068LGBK",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "181200A",
+	"itemprice_2": 0
+}, {
+	"vItemNumber": "18120LTAN",
+	"itemprice_2": 5.99
+}, {
+	"vItemNumber": "18229LBLU",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L180520112",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L181960150",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L181980517",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182020214",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182020515",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182130220",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "L182241201",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L182281824",
+	"itemprice_2": 12.99
+}, {
+	"vItemNumber": "L183050227",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183060227",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183162849",
+	"itemprice_2": 49.99
+}, {
+	"vItemNumber": "L183163049",
+	"itemprice_2": 49.99
+}, {
+	"vItemNumber": "L183173020",
+	"itemprice_2": 49.99
+}, {
+	"vItemNumber": "L183200222",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "L183480115",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10424",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10427",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10434",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10437",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10460",
+	"itemprice_2": 14.99
+}, {
+	"vItemNumber": "10615",
+	"itemprice_2": 19.99
+}, {
+	"vItemNumber": "10617",
+	"itemprice_2": 19.99
+}]

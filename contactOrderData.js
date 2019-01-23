@@ -1,0 +1,241 @@
+[{
+	"vid": 4865,
+	"properties": [{
+		"property": "n2018_number_of_orders",
+		"value": 2
+	}, {
+		"property": "n2018_total_sales",
+		"value": "$731.00"
+	}, {
+		"property": "hubspot_owner_id",
+		"value": "30951267"
+	}]
+}, {
+	"vid": 5421,
+	"properties": [{
+		"property": "n2018_number_of_orders",
+		"value": 2
+	}, {
+		"property": "n2018_total_sales",
+		"value": "$905.00"
+	}, {
+		"property": "hubspot_owner_id",
+		"value": "30967173"
+	}]
+}, {
+	"vid": 5509,
+	"properties": [{
+		"property": "n2018_number_of_orders",
+		"value": 2
+	}, {
+		"property": "n2018_total_sales",
+		"value": "$1,803.50"
+	}, {
+		"property": "hubspot_owner_id",
+		"value": "30967173"
+	}]
+}, {
+	"vid": 5564,
+	"properties": [{
+		"property": "n2018_number_of_orders",
+		"value": 1
+	}, {
+		"property": "n2018_total_sales",
+		"value": "$290.00"
+	}, {
+		"property": "hubspot_owner_id",
+		"value": "30951267"
+	}]
+}, {
+	"vid": 5695,
+	"properties": [{
+		"property": "n2018_number_of_orders",
+		"value": 1
+	}, {
+		"property": "n2018_total_sales",
+		"value": "$210.00"
+	}, {
+		"property": "hubspot_owner_id",
+		"value": "30951267"
+	}]
+}, {
+	"vid": 5780,
+	"properties": [{
+		"property": "n2018_number_of_orders",
+		"value": 1
+	}, {
+		"property": "n2018_total_sales",
+		"value": "$213.00"
+	}, {
+		"property": "hubspot_owner_id",
+		"value": "30951267"
+	}]
+}, {
+	"vid": 6029,
+	"properties": [{
+		"property": "n2018_number_of_orders",
+		"value": 2
+	}, {
+		"property": "n2018_total_sales",
+		"value": "$465.00"
+	}, {
+		"property": "hubspot_owner_id",
+		"value": "30967530"
+	}]
+}, {
+	"vid": 6857,
+	"properties": [{
+		"property": "n2018_number_of_orders",
+		"value": 2
+	}, {
+		"property": "n2018_total_sales",
+		"value": "$23,706.00"
+	}, {
+		"property": "hubspot_owner_id",
+		"value": "30967173"
+	}]
+}, {
+	"vid": 6867,
+	"properties": [{
+		"property": "n2018_number_of_orders",
+		"value": 2
+	}, {
+		"property": "n2018_total_sales",
+		"value": "$465.00"
+	}, {
+		"property": "hubspot_owner_id",
+		"value": "30967530"
+	}]
+}, {
+	"vid": 7762,
+	"properties": [{
+		"property": "n2018_number_of_orders",
+		"value": 2
+	}, {
+		"property": "n2018_total_sales",
+		"value": "$465.00"
+	}, {
+		"property": "hubspot_owner_id",
+		"value": "30967530"
+	}]
+}, {
+	"vid": 7805,
+	"properties": [{
+		"property": "n2018_number_of_orders",
+		"value": 2
+	}, {
+		"property": "n2018_total_sales",
+		"value": "$465.00"
+	}, {
+		"property": "hubspot_owner_id",
+		"value": "30967530"
+	}]
+}, {
+	"vid": 7808,
+	"properties": [{
+		"property": "n2018_number_of_orders",
+		"value": 1
+	}, {
+		"property": "n2018_total_sales",
+		"value": "$528.00"
+	}, {
+		"property": "hubspot_owner_id",
+		"value": "30951267"
+	}]
+}, {
+	"vid": 8651,
+	"properties": [{
+		"property": "n2018_number_of_orders",
+		"value": 2
+	}, {
+		"property": "n2018_total_sales",
+		"value": "$414.00"
+	}, {
+		"property": "hubspot_owner_id",
+		"value": "30967173"
+	}]
+}, {
+	"vid": 8701,
+	"properties": [{
+		"property": "n2018_number_of_orders",
+		"value": 3
+	}, {
+		"property": "n2018_total_sales",
+		"value": "$682.00"
+	}, {
+		"property": "hubspot_owner_id",
+		"value": "30951267"
+	}]
+}, {
+	"vid": 9801,
+	"properties": [{
+		"property": "n2018_number_of_orders",
+		"value": 1
+	}, {
+		"property": "n2018_total_sales",
+		"value": "$605.00"
+	}, {
+		"property": "hubspot_owner_id",
+		"value": "30967530"
+	}]
+}, {
+	"vid": 10551,
+	"properties": [{
+		"property": "n2018_number_of_orders",
+		"value": 1
+	}, {
+		"property": "n2018_total_sales",
+		"value": "$2,010.00"
+	}, {
+		"property": "hubspot_owner_id",
+		"value": "30967530"
+	}]
+}, {
+	"vid": 15851,
+	"properties": [{
+		"property": "n2018_number_of_orders",
+		"value": 2
+	}, {
+		"property": "n2018_total_sales",
+		"value": "$201.00"
+	}, {
+		"property": "hubspot_owner_id",
+		"value": "30967530"
+	}]
+}, {
+	"vid": 16454,
+	"properties": [{
+		"property": "n2018_number_of_orders",
+		"value": 1
+	}, {
+		"property": "n2018_total_sales",
+		"value": "$1,050.00"
+	}, {
+		"property": "hubspot_owner_id",
+		"value": "30967530"
+	}]
+}, {
+	"vid": 16553,
+	"properties": [{
+		"property": "n2018_number_of_orders",
+		"value": 1
+	}, {
+		"property": "n2018_total_sales",
+		"value": "$172.50"
+	}, {
+		"property": "hubspot_owner_id",
+		"value": "30967530"
+	}]
+}, {
+	"vid": 16853,
+	"properties": [{
+		"property": "n2018_number_of_orders",
+		"value": 2
+	}, {
+		"property": "n2018_total_sales",
+		"value": "$465.00"
+	}, {
+		"property": "hubspot_owner_id",
+		"value": "30967530"
+	}]
+}]

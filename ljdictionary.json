@@ -1,0 +1,63 @@
+{
+	"look": 
+		{
+			"RGLB": 100000,
+			"Mantra": 200000,
+			"Sleek": 300000,
+			"Boho Chic": 400000,
+			"Novelty": 500000,
+			"belle": 600000,
+			"Display": 700000
+		}
+	,
+	"type":
+		{
+			"Programs":10000,
+			"Assortments": 11000,
+			"Bracelets": 12000,
+			"Necklaces": 13000,
+			"Earrings": 14000,
+			"Rings": 15000,
+			"Apparel": 16000,
+			"Handbags": 17000,
+			"Brooches": 18000,
+			"Sets": 19000,
+			"Scarves": 20000,
+			"Mugs": 21000,
+			"Journals":22000,
+			"Keychains": 23000,
+			"Badge Holders": 24000,
+			"Oils": 25000,
+			"Displays": 26000
+		}
+	,
+	"color":
+		{
+			"Black":100,
+			"Silver":110,
+			"Gold": 120,
+			"Clear/Crystal": 130,
+			"Gunmetal": 140,
+			"Pink": 150,
+			"Turquoise": 160,
+			"Tan/Beige": 170,
+			"Navy": 180,
+			"Grey": 190,
+			"Taupe": 200,
+			"Red": 210,
+			"Cream/Off-White": 220,
+			"Brown": 230,
+			"Multi": 240,
+			"Maroon": 250,
+			"Rose Gold": 260,
+			"Green": 270,
+			"Purple": 280,
+		  "Blue": 290,
+			"Yellow": 300,
+			"Dark Green": 310,
+			"Teal": 320,
+			"White": 330,
+			"Light Blue": 340,
+			"Orange": 350
+		}
+	}

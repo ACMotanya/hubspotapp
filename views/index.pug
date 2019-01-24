@@ -4,31 +4,34 @@ block content
     main(role='main')
     .jumbotron
       .container
-        h1.display-3 HubSpot App 1.0
-        p Playground for HubSpot intergration.
+        h1.display-3 DIY Sync 1.0
+        p Playground for CousinDIY product sync.
         p
-          a.btn.btn-primary.btn-lg(href='#', role='button') Test »
+          a.btn.btn-primary.btn-lg(href='#', onclick="startSync();", role='button') Test »
     .container
       // Example row of columns
       .row
         .col-md-4
-          form
-            .form-group
-              label(for='exampleFormControlInput1') API URL
-              input#api-url.form-control(type='text', placeholder='name@example.com')
-              div(style='padding-top: 5px')
-                button.btn.btn-primary(type='button', onclick='callMe();') Primary
+          h2 Beta V 1.0
+          ul 
+            li Create a JSON file by querying CCA_Item_Descriptions table for the product data to import. 
+            li Export that data into a valid CSV.
+            li FTP that CSV file to a location DIY server.
+          
+            a.btn.btn-secondary(href='#', role='button') View details »
+          
         .col-md-4
           form
             .form-group
               label(for='exampleFormControlTextarea1') JSON Response
               textarea#response_area.form-control(rows='5')
         .col-md-4
-          h2 Heading
-          p
-            | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-          p
-            a.btn.btn-secondary(href='#', role='button') View details »
+          form
+            .form-group
+              label(for='exampleFormControlInput1') API URL
+              input#api-url.form-control(type='text', placeholder='name@example.com')
+              div(style='padding-top: 5px')
+                button.btn.btn-primary(type='button', onclick='testing();') Primary
       hr
       
     

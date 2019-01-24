@@ -1,17 +1,18 @@
-const https = require('https');
-const axios = require('axios');
-const fs = require('fs');
-const cors = require('cors');
-const sql = require('mssql');
+const https  = require('https');
+const axios  = require('axios');
+const fs     = require('fs');
+const cors   = require('cors');
+const sql    = require('mssql');
 const config = require('./config/DB');
+const dotenv = require('dotenv').config();
 
-//const file = fs.createWriteStream('contact.js');
+const hapikey = process.env.HAPIKEY;
 const hostname = '127.0.0.1';
 const port = 3000;
 var item;
 const server = https.createServer((req, res) => {
 	res.statusCode = 200;
-//	res.setHeader('Content-Type', 'text/plain');
+  //res.setHeader('Content-Type', 'text/plain');
 	res.end('Hello World\n');
 });
 
@@ -32,30 +33,32 @@ var formatter = new Intl.NumberFormat('en-US', {
   // and is usually already 2
 });
 function helloWork(vid, cb) {
-	axios.get('https://api.hubapi.com/contacts/v1/lists/all/contacts/all?hapikey=09c5f18b-d855-4d83-a770-063d908f9466&property=account_number&count=100&vidOffset=' + vid + '')
+	axios.get('https://api.hubapi.com/contacts/v1/lists/all/contacts/all?hapikey='+ hapikey +'&property=account_number&property=hubspot_owner_id&count=100&vidOffset=' + vid + '')
 		.then(function (response) {
-     // console.log(response.data.contacts);
-      looper = response.data.contacts;
-      looper.forEach(function (loop) {
-        if (loop.properties.account_number) {
-          console.log(loop.properties.account_number.value);
-        
-          json.push([loop.vid, loop.properties.account_number.value])
-          fs.appendFile("new2018.js", json, function(err){
-      //      if(err) throw err;
-         });
+      //console.log(response.data.contacts);
+      contacts = response.data.contacts;
+      contacts.forEach( function (contact) {
+        if (contact.properties.account_number) {
+          console.log(contact.properties.lastmodifieddate.value);
+          if (contact.properties.hubspot_owner_id) {         
+            json.push({"vid": contact.vid, "account_number": contact.properties.account_number.value, "hubspot_owner_id": contact.properties.hubspot_owner_id.value });
+          } else {
+            json.push({"vid": contact.vid, "account_number": contact.properties.account_number.value, "hubspot_owner_id": "30951267" });
+          }
         }
-      });
+      });s
       
-      
-      console.log('IS WRITTEN');
-  
-      //json = ", " + JSON.stringify(response.data.contacts);
 			if (response.data['has-more']) {
         json.push(", ");
         setTimeout(function () {
           helloWork(response.data['vid-offset']);
         }, 2000);
+      } else {
+        json = JSON.stringify(json);
+        fs.appendFile("contact.js", json, function(err){
+          if(err) throw err;
+          console.log('IT IS WRITTEN');
+        });
       }
     })
 		.catch(function (error) {
@@ -79,23 +82,28 @@ var customersToUpdate = [];
 function exeQuery(date) {
 	sql.connect(config, err => {
     var request = new sql.Request();
-    
-    request.query("SELECT a.ordernumber, a.customernumber From dbo.SWCCSHST1 a LEFT Outer Join dbo.HubSpotPushOrders b on a.ordernumber = b.OrderNumber Where (b.OrderNumber is null) and (a.invoicedate = '" + date + "') and (locationnumber = '800') order by a.ordernumber", (err, result) => {
-    //error checks  
-    //console.log(result);
+    request.query("SELECT a.ordernumber, a.invoicedate, a.totalprice, a.customernumber, a.invoicenumber, stuff((select ' ' + LTRIM(RTRIM(c.trackingnumber))+ ' ' from SWCCSSBOX c where a.invoicenumber = c.invoicenumber and c.boxnumber = 1 FOR XML PATH('')) ,1,1,'') AS TrackingInfo, stuff((select ' ' + LTRIM(RTRIM(c.shipmethod))+ ' ' from SWCCSSBOX c where a.invoicenumber = c.invoicenumber and c.boxnumber = 1 FOR XML PATH('')) ,1,1,'') AS MethodInfo From dbo.SWCCSHST1 a Left Outer Join dbo.HubSpotPushOrders b on a.ordernumber = b.OrderNumber Where (b.OrderNumber is null) and (a.invoicedate = '" + date + "') and (locationnumber = '800') order by a.ordernumber", (err, result) => {
       item = JSON.stringify(result.recordset);
       item = JSON.parse(item.replace(/"\s+|\s+"/g,'"'));
-      item = JSON.stringify(item);
       console.log(item);
-      
-      fs.writeFile('querydata.js', item, 'utf8', (error) => {
+      Object.keys(item).forEach(function(k){
+        if (item[k].TrackingInfo) {
+          item[k].TrackingInfo = item[k].TrackingInfo.split("  ");
+        } else {
+          item[k].TrackingInfo = "None Provided.";
+        }
+        if (item[k].MethodInfo)
+          item[k].MethodInfo = item[k].MethodInfo.split("  ");
+      });
+
+      fs.writeFile('querydata.js', JSON.stringify(item), 'utf8', (error) => {
         if (error)
         console.log(error);
       });
     });
   });
 }
-//exeQuery("1/18/2018");
+//exeQuery("2/19/2018");
 var itemsProcessed = 0;
 
 function customerUpdate () {
@@ -105,14 +113,14 @@ function customerUpdate () {
   sql.connect(config, err => {
     var request = new sql.Request();
     Object.keys(customerdata).forEach(function(k){
-   //   console.log(customerdata[k].customernumber);
+      //console.log(customerdata[k].customernumber);
       request.query("SELECT t.customernumber, sum(tprice)as TSales, sum(tcnt) as TOrders from ( SELECT a.customernumber, sum(totalprice)as TPrice,Sum(totalcost) as TCost,Sum(totaldiscountamt) as TDisc, count(totalprice)as tcnt, b.emailaddress FROM SWCCSHST1 a left outer join swccrcust b on a.customernumber = b.customernumber where Year(invoicedate) = '2018' and (totalcost <> 0) and ((OrderType ='R') Or (OrderType = 'H')) and locationnumber = '800' and LTRIM(RTRIM(b.customernumber))  = '"+ customerdata[k].customernumber +"' group by a.customernumber, b.emailaddress UNION ALL select c.customernumber, sum(totalprice)as TPrice,Sum(totalcost) as TCost,Sum(totaldiscount) as TDisc, count(totalprice)as tcnt, d.emailaddress from SWCCSBIL1 c left outer join swccrcust d on c.customernumber = d.customernumber where Year(orderdate) = '2016' and (totalcost <> 0) and ((OrderType ='R') Or (OrderType = 'H')) and locationnumber = '800' and LTRIM(RTRIM(d.customernumber)) = '"+ customerdata[k].customernumber +"' group by c.customernumber, d.emailaddress) t group by t.customernumber, t.emailaddress order by t.customernumber", (err, result) => {
         itemsProcessed++;
         custitem = JSON.stringify(result.recordset);
         customersToUpdate.push(custitem);
         console.log(customersToUpdate);
         if(itemsProcessed === customerdata.length) {
-          fs.writeFile('2018querydata.js', JSON.stringify(customersToUpdate), 'utf8', (error) => {
+          fs.writeFile('dailyQueryData.js', JSON.stringify(customersToUpdate), 'utf8', (error) => {
             if (error)
             console.log(error);
           });
@@ -140,17 +148,15 @@ function formatSalesDataForUpload() {
 
   data.forEach(function (batch) {
     cntr++;
-    batch.forEach(function (contact) {
-      if (contact.properties.account_number) {
-        query_data.forEach(function (item) {
-          item = JSON.parse(item);
-          if (contact.properties.account_number.value === item[0].customernumber.trim()) {
-            console.log("HI! I updated " + item[0].customernumber + " and also " + contact.properties.account_number.value + " " + cntr);
-            updated_json.push({"vid": contact.vid, "properties": [{"property": "n2018_number_of_orders", "value" : item[0].TOrders },{"property": "n2018_total_sales", "value": formatter.format(item[0].TSales)}] });
-          }
-        });
+
+    query_data.forEach(function (item) {
+      item = JSON.parse(item);
+      if (batch.account_number === item[0].customernumber.trim()) {
+        console.log("HI! I updated " + item[0].customernumber + " and also " + batch.account_number + " " + cntr);
+        updated_json.push({"vid": batch.vid, "properties": [{"property": "n2018_number_of_orders", "value" : item[0].TOrders },{"property": "n2018_total_sales", "value": formatter.format(item[0].TSales)},{"property": "hubspot_owner_id", "value": batch.hubspot_owner_id}] });
       }
     });
+
     console.log(cntr);
     if(cntr === data.length) {
       updated_json = JSON.stringify(updated_json);
@@ -160,10 +166,6 @@ function formatSalesDataForUpload() {
   });
 }
 //formatSalesDataForUpload();
-
-
-
-
 
 
 
@@ -326,7 +328,7 @@ function hubspotUpload() {
   //  setTimeout(function () {
       axios({
         method: 'POST',
-        url: 'https://api.hubapi.com/contacts/v1/contact/batch/?hapikey=09c5f18b-d855-4d83-a770-063d908f9466',
+        url: 'https://api.hubapi.com/contacts/v1/contact/batch/?hapikey='+ hapikey,
         data:  newJson
       })
       .then(function (response) {
@@ -342,5 +344,61 @@ function hubspotUpload() {
 
 //hubspotUpload();
 
-
 //item = JSON.parse(item.replace(/"\s+|\s+"/g,'"'));
+
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+// BUILD TASK ENGAGEMENTS JSON FOR THE ORDERS INVOICED THAT DAY.
+counter = 0;
+
+function gageBuilder() {
+  var gager = fs.readFileSync('2018contact.js', 'utf-8');
+  gager = JSON.parse(gager);
+  var dailyorders = fs.readFileSync('querydata.js', 'utf-8');
+  dailyorders = JSON.parse(dailyorders);
+
+  Object.keys(gager).forEach(function(k) {
+    counter++;
+    Object.keys(dailyorders).forEach(function (order, index) {
+      if (gager[k].account_number === dailyorders[order].customernumber) {
+        reminder = Date.now() + 604800000;
+        duedate = Date.now() + 1209600000;
+        setTimeout(function () {
+          axios({
+            method: 'POST',
+            url: 'https://api.hubapi.com/engagements/v1/engagements?hapikey=' + hapikey,
+            data: 
+              { "engagement": 
+                { "active": true,
+                  "ownerId": gager[k].hubspot_owner_id,
+                  "type": "TASK",
+                  "timestamp": duedate
+                },
+                "associations": {
+                    "contactIds": [gager[k].vid]
+                },
+                "metadata": {
+                  "body": "Call and confirm she received shipment of order " + dailyorders[order].ordernumber + ". Tracking number(s): " + dailyorders[order].TrackingInfo.join("  ") +".",
+                  "subject": "Reason for Call: Confirm Order Receipt",
+                  "status": "NOT_STARTED",
+                  "forObjectType": "CONTACT",
+                  "taskType": "CALL",
+                  "reminders": [reminder],
+                  "sendDefaultReminder": true
+                }
+              }
+          })
+          .then(function (response) {
+            console.log(response.status);
+          })
+          .catch(function (error) {
+            console.log(error.IncomingMessage);
+          });
+        }, index * 1500);
+      }
+    });
+  });
+}
+
+//gageBuilder();

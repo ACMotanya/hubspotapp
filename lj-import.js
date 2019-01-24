@@ -48,7 +48,12 @@ function getProducts() {
 }
 
 //getProducts();
-var connection = mysql.createConnection({cousindbconfig});
+var connection = mysql.createConnection({
+	host: '192.169.139.196',
+	user: 'cousinrw',
+	password: 'Cousin_789',
+	database: 'CousinDB'
+});
 
 function updateDescQuery() {
 	connection.connect();
@@ -62,29 +67,4 @@ function updateDescQuery() {
   });
 }
 
-updateDescQuery();
-
-function getProducts() {
-  sql.connect(cousindbconfig).then(pool =>  {
-    return pool.request()
-    .query("UPDATE `CousinDB`.`SWCCSSTOK` set vItemNumber, itemprice_2 from [dbo].[CCA_ITEM_DESCRIPTIONS] LEFT JOIN dbo.SWCCSSTOK ON dbo.CCA_ITEM_DESCRIPTIONS.vItemNumber = dbo.SWCCSSTOK.stocknumber AND dbo.CCA_ITEM_DESCRIPTIONS.vLocation = dbo.SWCCSSTOK.locationnumber where [vShowOnSite] LIKE '%Y%' AND [vLocation] LIKE '%800%'");
-  }).then(result => {
-      items = JSON.stringify(result.recordset);
-			items = JSON.parse(items.replace(/"\s+|\s+"/g,'"'));
-
-      fs.writeFile('items800.js', JSON.stringify(items), 'utf8', (error) => {
-        if (error)
-          console.log(error);
-      });
-  }).then(() => {
-    sql.close();
-  }).catch(err => {
-    // ... error checks
-    console.log(err);
-	});
-	
-  sql.on('error', err => {
-    // ... error handler
-    console.log(err);
-  });
-}
+//updateDescQuery();

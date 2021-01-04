@@ -5,7 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "atob": "^2.1.2",
-    "axios": "^0.17.1",
+    "axios": "^0.21.1",
     "body-parser": "^1.18.3",
     "clean-css": "^4.2.1",
     "cors": "^2.8.5",
